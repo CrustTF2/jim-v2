@@ -22,7 +22,7 @@ cmake -S . -B build -A Win32
 cmake --build build --config Release --target item_manager decal_converter
 ```
 
-The resulting program and bundled assets are in `build/package`. The dependency preparation script checks downloads against SHA-256 hashes in `dependency-sources.json`. The user-provided Steam Web API key is compiled into the application, so it is visible to anyone using or inspecting the distributed program.
+The resulting program and bundled assets are in `build/package`. The dependency preparation script checks downloads against SHA-256 hashes in `dependency-sources.json`.
 
 ## Credits
 
