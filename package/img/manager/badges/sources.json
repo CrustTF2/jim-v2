@@ -1,0 +1,50 @@
+[
+  {
+    "file": "statclock.png",
+    "source": "materials/vgui/viewmode_statclock.vtf",
+    "source_sha256": "2320332513108981603b77f46af6e1e3a14f20630295d58cb586bcf86a36e88f"
+  },
+  {
+    "file": "strange.png",
+    "source": "materials/vgui/viewmode_strange.vtf",
+    "source_sha256": "0613316eb501af00641f2d6d61a08f75d74984f896777251d2daacebdef0d4ac"
+  },
+  {
+    "file": "unusual.png",
+    "source": "materials/vgui/viewmode_unusual.vtf",
+    "source_sha256": "5f6eda1e546a9871c9e7851d721fd6a05428e3ff663d3fb0487a8b2ce19f63b5"
+  },
+  {
+    "file": "halloween.png",
+    "source": "materials/vgui/viewmode_spooky.vtf",
+    "source_sha256": "8cddb2beab815430e05779920dbed15d5aec4fe9b9272c92eaae80c29feeca12"
+  },
+  {
+    "file": "halloween_off.png",
+    "source": "materials/vgui/viewmode_spooky_off.vtf",
+    "source_sha256": "36f8ca5c178da16851e4dbbec903c5969c71070ffa716328ec67cfcbdbeadf8b"
+  },
+  {
+    "file": "paint.png",
+    "source": "img/backpack/player/items/crafting/backpack_jewel_paint_splatter.png",
+    "source_sha256": "86b29257c38de18c567f3065daae22a9dd189f4ea11ad0f49956165f9fa9c295",
+    "transformation": "Crop (64,16,128,80)"
+  },
+  {
+    "file": "paint_blu.png",
+    "source": "img/backpack/player/items/crafting/backpack_jewel_paint_splatter_blu.png",
+    "source_sha256": "f8bc808ab786ce5db8f290ff1a537d2f6e1eeb6b0a44db35a1d9228a2371ea74",
+    "transformation": "Crop (64,16,128,80)"
+  },
+  {
+    "file": "paint_red.png",
+    "source": "img/backpack/player/items/crafting/backpack_jewel_paint_splatter_red.png",
+    "source_sha256": "ca5b0c4d77ce47fa6dbfc3e279d1c2f8212b5a90c7cb56c33d5ab5a45fca9f41",
+    "transformation": "Crop (64,16,128,80)"
+  },
+  {
+    "file": "pyroland.png",
+    "source": "materials/vgui/viewmode_pyrovision.vtf",
+    "source_sha256": "be0d89f572cc9b57e5b0ab77f43168a02a6282fcec28450733703ad0c91d2e36"
+  }
+]

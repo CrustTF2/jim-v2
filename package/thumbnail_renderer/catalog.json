@@ -1,0 +1,5066 @@
+{
+  "weapons": [
+    {
+      "id": 0,
+      "name": "Bat",
+      "model": "models/weapons/c_models/c_bat.mdl",
+      "definition_name": "TF_WEAPON_BAT",
+      "default_paint": 0
+    },
+    {
+      "id": 1,
+      "name": "Bottle",
+      "model": "models/weapons/c_models/c_bottle/c_bottle.mdl",
+      "definition_name": "TF_WEAPON_BOTTLE",
+      "default_paint": 0
+    },
+    {
+      "id": 2,
+      "name": "Fire Axe",
+      "model": "models/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro.mdl",
+      "definition_name": "TF_WEAPON_FIREAXE",
+      "default_paint": 0
+    },
+    {
+      "id": 3,
+      "name": "Kukri",
+      "model": "models/weapons/c_models/c_machete/c_machete.mdl",
+      "definition_name": "TF_WEAPON_CLUB",
+      "default_paint": 0
+    },
+    {
+      "id": 4,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "TF_WEAPON_KNIFE",
+      "default_paint": 0
+    },
+    {
+      "id": 6,
+      "name": "Shovel",
+      "model": "models/weapons/c_models/c_shovel/c_shovel.mdl",
+      "definition_name": "TF_WEAPON_SHOVEL",
+      "default_paint": 0
+    },
+    {
+      "id": 7,
+      "name": "Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "TF_WEAPON_WRENCH",
+      "default_paint": 0
+    },
+    {
+      "id": 8,
+      "name": "Bonesaw",
+      "model": "models/weapons/c_models/c_bonesaw/c_bonesaw.mdl",
+      "definition_name": "TF_WEAPON_BONESAW",
+      "default_paint": 0
+    },
+    {
+      "id": 9,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "TF_WEAPON_SHOTGUN_PRIMARY",
+      "default_paint": 0
+    },
+    {
+      "id": 10,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "TF_WEAPON_SHOTGUN_SOLDIER",
+      "default_paint": 0
+    },
+    {
+      "id": 11,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "TF_WEAPON_SHOTGUN_HWG",
+      "default_paint": 0
+    },
+    {
+      "id": 12,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "TF_WEAPON_SHOTGUN_PYRO",
+      "default_paint": 0
+    },
+    {
+      "id": 13,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "TF_WEAPON_SCATTERGUN",
+      "default_paint": 0
+    },
+    {
+      "id": 14,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "TF_WEAPON_SNIPERRIFLE",
+      "default_paint": 0
+    },
+    {
+      "id": 15,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "TF_WEAPON_MINIGUN",
+      "default_paint": 0
+    },
+    {
+      "id": 16,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "TF_WEAPON_SMG",
+      "default_paint": 0
+    },
+    {
+      "id": 17,
+      "name": "Syringe Gun",
+      "model": "models/weapons/c_models/c_syringegun/c_syringegun.mdl",
+      "definition_name": "TF_WEAPON_SYRINGEGUN_MEDIC",
+      "default_paint": 0
+    },
+    {
+      "id": 18,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "TF_WEAPON_ROCKETLAUNCHER",
+      "default_paint": 0
+    },
+    {
+      "id": 19,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "TF_WEAPON_GRENADELAUNCHER",
+      "default_paint": 0
+    },
+    {
+      "id": 20,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "TF_WEAPON_PIPEBOMBLAUNCHER",
+      "default_paint": 0
+    },
+    {
+      "id": 21,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "TF_WEAPON_FLAMETHROWER",
+      "default_paint": 0
+    },
+    {
+      "id": 22,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "TF_WEAPON_PISTOL",
+      "default_paint": 0
+    },
+    {
+      "id": 23,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "TF_WEAPON_PISTOL_SCOUT",
+      "default_paint": 0
+    },
+    {
+      "id": 24,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "TF_WEAPON_REVOLVER",
+      "default_paint": 0
+    },
+    {
+      "id": 25,
+      "name": "Construction PDA",
+      "model": "models/weapons/c_models/c_builder/c_builder.mdl",
+      "definition_name": "TF_WEAPON_PDA_ENGINEER_BUILD",
+      "default_paint": 0
+    },
+    {
+      "id": 26,
+      "name": "Destruction PDA",
+      "model": "models/weapons/c_models/c_pda_engineer/c_pda_engineer.mdl",
+      "definition_name": "TF_WEAPON_PDA_ENGINEER_DESTROY",
+      "default_paint": 0
+    },
+    {
+      "id": 27,
+      "name": "Disguise Kit",
+      "model": "models/weapons/w_models/w_cigarette_case.mdl",
+      "definition_name": "TF_WEAPON_PDA_SPY",
+      "default_paint": 0
+    },
+    {
+      "id": 28,
+      "name": "PDA",
+      "model": "models/weapons/c_models/c_toolbox/c_toolbox.mdl",
+      "definition_name": "TF_WEAPON_BUILDER",
+      "default_paint": 0
+    },
+    {
+      "id": 29,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "TF_WEAPON_MEDIGUN",
+      "default_paint": 0
+    },
+    {
+      "id": 30,
+      "name": "Invis Watch",
+      "model": "models/weapons/v_models/v_watch_spy.mdl",
+      "definition_name": "TF_WEAPON_INVIS",
+      "default_paint": 0
+    },
+    {
+      "id": 735,
+      "name": "Sapper",
+      "model": "models/weapons/c_models/c_sapper/c_sapper.mdl",
+      "definition_name": "TF_WEAPON_BUILDER_SPY",
+      "default_paint": 0
+    },
+    {
+      "id": 736,
+      "name": "Sapper",
+      "model": "models/weapons/c_models/c_sapper/c_sapper.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_BUILDER_SPY",
+      "default_paint": 0
+    },
+    {
+      "id": 737,
+      "name": "Construction PDA",
+      "model": "models/weapons/c_models/c_builder/c_builder.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_PDA_ENGINEER_BUILD",
+      "default_paint": 0
+    },
+    {
+      "id": 1152,
+      "name": "Grappling Hook",
+      "model": "models/weapons/c_models/c_grappling_hook/c_grappling_hook.mdl",
+      "definition_name": "TF_WEAPON_GRAPPLINGHOOK",
+      "default_paint": 0
+    },
+    {
+      "id": 35,
+      "name": "Kritzkrieg",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "The Kritzkrieg",
+      "default_paint": 0
+    },
+    {
+      "id": 36,
+      "name": "Blutsauger",
+      "model": "models/weapons/c_models/c_leechgun/c_leechgun.mdl",
+      "definition_name": "The Blutsauger",
+      "default_paint": 0
+    },
+    {
+      "id": 37,
+      "name": "Übersaw",
+      "model": "models/weapons/c_models/c_ubersaw/c_ubersaw.mdl",
+      "definition_name": "The Ubersaw",
+      "default_paint": 0
+    },
+    {
+      "id": 38,
+      "name": "Axtinguisher",
+      "model": "models/weapons/c_models/c_axtinguisher/c_axtinguisher_pyro.mdl",
+      "definition_name": "The Axtinguisher",
+      "default_paint": 0
+    },
+    {
+      "id": 39,
+      "name": "Flare Gun",
+      "model": "models/weapons/c_models/c_flaregun_pyro/c_flaregun_pyro.mdl",
+      "definition_name": "The Flare Gun",
+      "default_paint": 0
+    },
+    {
+      "id": 40,
+      "name": "Backburner",
+      "model": "models/weapons/c_models/c_flamethrower/c_backburner.mdl",
+      "definition_name": "The Backburner",
+      "default_paint": 0
+    },
+    {
+      "id": 41,
+      "name": "Natascha",
+      "model": "models/weapons/c_models/c_minigun/c_minigun_natascha.mdl",
+      "definition_name": "Natascha",
+      "default_paint": 0
+    },
+    {
+      "id": 42,
+      "name": "Sandvich",
+      "model": "models/weapons/c_models/c_sandwich/c_sandwich.mdl",
+      "definition_name": "The Sandvich",
+      "default_paint": 0
+    },
+    {
+      "id": 43,
+      "name": "Killing Gloves of Boxing",
+      "model": "models/weapons/c_models/c_boxing_gloves/c_boxing_gloves.mdl",
+      "definition_name": "The Killing Gloves of Boxing",
+      "default_paint": 0
+    },
+    {
+      "id": 44,
+      "name": "Sandman",
+      "model": "models/weapons/c_models/c_wooden_bat/c_wooden_bat.mdl",
+      "definition_name": "The Sandman",
+      "default_paint": 0
+    },
+    {
+      "id": 45,
+      "name": "Force-a-Nature",
+      "model": "models/weapons/c_models/c_double_barrel.mdl",
+      "definition_name": "The Force-a-Nature",
+      "default_paint": 0
+    },
+    {
+      "id": 46,
+      "name": "Bonk! Atomic Punch",
+      "model": "models/weapons/c_models/c_energy_drink/c_energy_drink.mdl",
+      "definition_name": "Bonk! Atomic Punch",
+      "default_paint": 0
+    },
+    {
+      "id": 56,
+      "name": "Huntsman",
+      "model": "models/weapons/c_models/c_bow/c_bow.mdl",
+      "definition_name": "The Huntsman",
+      "default_paint": 0
+    },
+    {
+      "id": 58,
+      "name": "Jarate",
+      "model": "models/weapons/c_models/urinejar.mdl",
+      "definition_name": "Jarate",
+      "default_paint": 0
+    },
+    {
+      "id": 59,
+      "name": "Dead Ringer",
+      "model": "models/weapons/v_models/v_watch_pocket_spy.mdl",
+      "definition_name": "The Dead Ringer",
+      "default_paint": 0
+    },
+    {
+      "id": 60,
+      "name": "Cloak and Dagger",
+      "model": "models/weapons/v_models/v_watch_leather_spy.mdl",
+      "definition_name": "The Cloak and Dagger",
+      "default_paint": 0
+    },
+    {
+      "id": 61,
+      "name": "Ambassador",
+      "model": "models/weapons/c_models/c_ambassador/c_ambassador.mdl",
+      "definition_name": "The Ambassador",
+      "default_paint": 0
+    },
+    {
+      "id": 127,
+      "name": "Direct Hit",
+      "model": "models/weapons/c_models/c_directhit/c_directhit.mdl",
+      "definition_name": "The Direct Hit",
+      "default_paint": 0
+    },
+    {
+      "id": 128,
+      "name": "Equalizer",
+      "model": "models/weapons/c_models/c_pickaxe/c_pickaxe_s2.mdl",
+      "definition_name": "The Equalizer",
+      "default_paint": 0
+    },
+    {
+      "id": 129,
+      "name": "Buff Banner",
+      "model": "models/weapons/c_models/c_bugle/c_bugle.mdl",
+      "definition_name": "The Buff Banner",
+      "default_paint": 0
+    },
+    {
+      "id": 130,
+      "name": "Scottish Resistance",
+      "model": "models/weapons/c_models/c_scottish_resistance/c_scottish_resistance.mdl",
+      "definition_name": "The Scottish Resistance",
+      "default_paint": 0
+    },
+    {
+      "id": 131,
+      "name": "Chargin' Targe",
+      "model": "models/weapons/c_models/c_targe/c_targe.mdl",
+      "definition_name": "The Chargin' Targe",
+      "default_paint": 0
+    },
+    {
+      "id": 132,
+      "name": "Eyelander",
+      "model": "models/weapons/c_models/c_claymore/c_claymore.mdl",
+      "definition_name": "The Eyelander",
+      "default_paint": 0
+    },
+    {
+      "id": 133,
+      "name": "Gunboats",
+      "model": "models/weapons/c_models/c_rocketboots_soldier.mdl",
+      "definition_name": "The Gunboats",
+      "default_paint": 0
+    },
+    {
+      "id": 140,
+      "name": "Wrangler",
+      "model": "models/weapons/c_models/c_wrangler.mdl",
+      "definition_name": "The Wrangler",
+      "default_paint": 0
+    },
+    {
+      "id": 141,
+      "name": "Frontier Justice",
+      "model": "models/weapons/c_models/c_frontierjustice/c_frontierjustice.mdl",
+      "definition_name": "The Frontier Justice",
+      "default_paint": 0
+    },
+    {
+      "id": 163,
+      "name": "Crit-a-Cola",
+      "model": "models/weapons/c_models/c_energy_drink/c_energy_drink.mdl",
+      "definition_name": "Crit-a-Cola",
+      "default_paint": 0
+    },
+    {
+      "id": 169,
+      "name": "Golden Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Golden Wrench",
+      "default_paint": 0
+    },
+    {
+      "id": 190,
+      "name": "Bat",
+      "model": "models/weapons/c_models/c_bat.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_BAT",
+      "default_paint": 0
+    },
+    {
+      "id": 191,
+      "name": "Bottle",
+      "model": "models/weapons/c_models/c_bottle/c_bottle.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_BOTTLE",
+      "default_paint": 0
+    },
+    {
+      "id": 192,
+      "name": "Fire Axe",
+      "model": "models/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_FIREAXE",
+      "default_paint": 0
+    },
+    {
+      "id": 193,
+      "name": "Kukri",
+      "model": "models/weapons/c_models/c_machete/c_machete.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_CLUB",
+      "default_paint": 0
+    },
+    {
+      "id": 194,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_KNIFE",
+      "default_paint": 0
+    },
+    {
+      "id": 196,
+      "name": "Shovel",
+      "model": "models/weapons/c_models/c_shovel/c_shovel.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_SHOVEL",
+      "default_paint": 0
+    },
+    {
+      "id": 197,
+      "name": "Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_WRENCH",
+      "default_paint": 0
+    },
+    {
+      "id": 198,
+      "name": "Bonesaw",
+      "model": "models/weapons/c_models/c_bonesaw/c_bonesaw.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_BONESAW",
+      "default_paint": 0
+    },
+    {
+      "id": 199,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_SHOTGUN_PRIMARY",
+      "default_paint": 0
+    },
+    {
+      "id": 200,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_SCATTERGUN",
+      "default_paint": 0
+    },
+    {
+      "id": 201,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_SNIPERRIFLE",
+      "default_paint": 0
+    },
+    {
+      "id": 202,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_MINIGUN",
+      "default_paint": 0
+    },
+    {
+      "id": 203,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_SMG",
+      "default_paint": 0
+    },
+    {
+      "id": 204,
+      "name": "Syringe Gun",
+      "model": "models/weapons/c_models/c_syringegun/c_syringegun.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_SYRINGEGUN_MEDIC",
+      "default_paint": 0
+    },
+    {
+      "id": 205,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_ROCKETLAUNCHER",
+      "default_paint": 0
+    },
+    {
+      "id": 206,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_GRENADELAUNCHER",
+      "default_paint": 0
+    },
+    {
+      "id": 207,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_PIPEBOMBLAUNCHER",
+      "default_paint": 0
+    },
+    {
+      "id": 208,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_FLAMETHROWER",
+      "default_paint": 0
+    },
+    {
+      "id": 209,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_PISTOL",
+      "default_paint": 0
+    },
+    {
+      "id": 210,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_REVOLVER",
+      "default_paint": 0
+    },
+    {
+      "id": 211,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_MEDIGUN",
+      "default_paint": 0
+    },
+    {
+      "id": 212,
+      "name": "Invis Watch",
+      "model": "models/weapons/v_models/v_watch_spy.mdl",
+      "definition_name": "Upgradeable TF_WEAPON_INVIS",
+      "default_paint": 0
+    },
+    {
+      "id": 237,
+      "name": "Rocket Jumper",
+      "model": "models/weapons/c_models/c_rocketjumper/c_rocketjumper.mdl",
+      "definition_name": "Rocket Jumper",
+      "default_paint": 0
+    },
+    {
+      "id": 239,
+      "name": "Gloves of Running Urgently",
+      "model": "models/weapons/c_models/c_boxing_gloves/c_boxing_gloves.mdl",
+      "definition_name": "Gloves of Running Urgently",
+      "default_paint": 0
+    },
+    {
+      "id": 264,
+      "name": "Frying Pan",
+      "model": "models/weapons/c_models/c_frying_pan/c_frying_pan.mdl",
+      "definition_name": "Frying Pan",
+      "default_paint": 0
+    },
+    {
+      "id": 265,
+      "name": "Sticky Jumper",
+      "model": "models/weapons/c_models/c_sticky_jumper/c_sticky_jumper.mdl",
+      "definition_name": "Stickybomb Jumper",
+      "default_paint": 0
+    },
+    {
+      "id": 266,
+      "name": "Horseless Headless Horsemann's Headtaker",
+      "model": "models/weapons/c_models/c_headtaker/c_headtaker.mdl",
+      "definition_name": "The Horseless Headless Horseman's Headtaker",
+      "default_paint": 0
+    },
+    {
+      "id": 297,
+      "name": "Enthusiast's Timepiece",
+      "model": "models/weapons/v_models/v_ttg_watch_spy.mdl",
+      "definition_name": "TTG Watch",
+      "default_paint": 0
+    },
+    {
+      "id": 411,
+      "name": "Quick-Fix",
+      "model": "models/weapons/c_models/c_proto_medigun/c_proto_medigun.mdl",
+      "definition_name": "The Quick-Fix",
+      "default_paint": 0
+    },
+    {
+      "id": 412,
+      "name": "Overdose",
+      "model": "models/weapons/c_models/c_proto_syringegun/c_proto_syringegun.mdl",
+      "definition_name": "The Overdose",
+      "default_paint": 0
+    },
+    {
+      "id": 413,
+      "name": "Solemn Vow",
+      "model": "models/weapons/c_models/c_hippocrates_bust/c_hippocrates_bust.mdl",
+      "definition_name": "The Solemn Vow",
+      "default_paint": 0
+    },
+    {
+      "id": 423,
+      "name": "Saxxy",
+      "model": "models/weapons/c_models/c_saxxy/c_saxxy.mdl",
+      "definition_name": "Saxxy",
+      "default_paint": 0
+    },
+    {
+      "id": 654,
+      "name": "Festive Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Festive Minigun 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 658,
+      "name": "Festive Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Festive Rocket Launcher 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 659,
+      "name": "Festive Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Festive Flamethrower 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 660,
+      "name": "Festive Bat",
+      "model": "models/weapons/c_models/c_bat.mdl",
+      "definition_name": "Festive Bat 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 661,
+      "name": "Festive Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Festive Stickybomb Launcher 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 662,
+      "name": "Festive Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Festive Wrench 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 663,
+      "name": "Festive Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Festive Medigun 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 664,
+      "name": "Festive Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Festive Sniper Rifle 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 665,
+      "name": "Festive Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Festive Knife 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 669,
+      "name": "Festive Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Festive Scattergun 2011",
+      "default_paint": 0
+    },
+    {
+      "id": 739,
+      "name": "Lollichop",
+      "model": "models/weapons/c_models/c_lollichop/c_lollichop.mdl",
+      "definition_name": "The Lollichop",
+      "default_paint": 0
+    },
+    {
+      "id": 741,
+      "name": "Rainblower",
+      "model": "models/weapons/c_models/c_rainblower/c_rainblower.mdl",
+      "definition_name": "The Rainblower",
+      "default_paint": 0
+    },
+    {
+      "id": 775,
+      "name": "Escape Plan",
+      "model": "models/weapons/c_models/c_pickaxe/c_pickaxe.mdl",
+      "definition_name": "The Escape Plan",
+      "default_paint": 0
+    },
+    {
+      "id": 792,
+      "name": "Silver Botkiller Sniper Rifle Mk.I",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Silver Botkiller Sniper Rifle Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 793,
+      "name": "Silver Botkiller Minigun Mk.I",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Silver Botkiller Minigun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 794,
+      "name": "Silver Botkiller Knife Mk.I",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Silver Botkiller Knife Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 795,
+      "name": "Silver Botkiller Wrench Mk.I",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Silver Botkiller Wrench Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 796,
+      "name": "Silver Botkiller Medi Gun Mk.I",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Silver Botkiller Medi Gun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 797,
+      "name": "Silver Botkiller Stickybomb Launcher Mk.I",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Silver Botkiller Stickybomb Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 798,
+      "name": "Silver Botkiller Flame Thrower Mk.I",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Silver Botkiller Flame Thrower Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 799,
+      "name": "Silver Botkiller Scattergun Mk.I",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Silver Botkiller Scattergun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 800,
+      "name": "Silver Botkiller Rocket Launcher Mk.I",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Silver Botkiller Rocket Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 801,
+      "name": "Gold Botkiller Sniper Rifle Mk.I",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Gold Botkiller Sniper Rifle Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 802,
+      "name": "Gold Botkiller Minigun Mk.I",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Gold Botkiller Minigun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 803,
+      "name": "Gold Botkiller Knife Mk.I",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Gold Botkiller Knife Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 804,
+      "name": "Gold Botkiller Wrench Mk.I",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Gold Botkiller Wrench Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 805,
+      "name": "Gold Botkiller Medi Gun Mk.I",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Gold Botkiller Medi Gun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 806,
+      "name": "Gold Botkiller Stickybomb Launcher Mk.I",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Gold Botkiller Stickybomb Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 807,
+      "name": "Gold Botkiller Flame Thrower Mk.I",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Gold Botkiller Flame Thrower Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 808,
+      "name": "Gold Botkiller Scattergun Mk.I",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Gold Botkiller Scattergun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 809,
+      "name": "Gold Botkiller Rocket Launcher Mk.I",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Gold Botkiller Rocket Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 850,
+      "name": "Deflector",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Deflector",
+      "default_paint": 0
+    },
+    {
+      "id": 851,
+      "name": "AWPer Hand",
+      "model": "models/weapons/c_models/c_csgo_awp/c_csgo_awp.mdl",
+      "definition_name": "The AWPer Hand",
+      "default_paint": 0
+    },
+    {
+      "id": 863,
+      "name": "Robo-Sandvich",
+      "model": "models/weapons/c_models/c_sandwich/c_robo_sandwich.mdl",
+      "definition_name": "The Robo-Sandvich",
+      "default_paint": 0
+    },
+    {
+      "id": 881,
+      "name": "Rust Botkiller Sniper Rifle Mk.I",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Rust Botkiller Sniper Rifle Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 882,
+      "name": "Rust Botkiller Minigun Mk.I",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Rust Botkiller Minigun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 883,
+      "name": "Rust Botkiller Knife Mk.I",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Rust Botkiller Knife Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 884,
+      "name": "Rust Botkiller Wrench Mk.I",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Rust Botkiller Wrench Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 885,
+      "name": "Rust Botkiller Medi Gun Mk.I",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Rust Botkiller Medi Gun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 886,
+      "name": "Rust Botkiller Stickybomb Launcher Mk.I",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Rust Botkiller Stickybomb Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 887,
+      "name": "Rust Botkiller Flame Thrower Mk.I",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Rust Botkiller Flame Thrower Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 888,
+      "name": "Rust Botkiller Scattergun Mk.I",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Rust Botkiller Scattergun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 889,
+      "name": "Rust Botkiller Rocket Launcher Mk.I",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Rust Botkiller Rocket Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 890,
+      "name": "Blood Botkiller Sniper Rifle Mk.I",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Blood Botkiller Sniper Rifle Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 891,
+      "name": "Blood Botkiller Minigun Mk.I",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Blood Botkiller Minigun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 892,
+      "name": "Blood Botkiller Knife Mk.I",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Blood Botkiller Knife Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 893,
+      "name": "Blood Botkiller Wrench Mk.I",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Blood Botkiller Wrench Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 894,
+      "name": "Blood Botkiller Medi Gun Mk.I",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Blood Botkiller Medi Gun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 895,
+      "name": "Blood Botkiller Stickybomb Launcher Mk.I",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Blood Botkiller Stickybomb Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 896,
+      "name": "Blood Botkiller Flame Thrower Mk.I",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Blood Botkiller Flame Thrower Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 897,
+      "name": "Blood Botkiller Scattergun Mk.I",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Blood Botkiller Scattergun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 898,
+      "name": "Blood Botkiller Rocket Launcher Mk.I",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Blood Botkiller Rocket Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 899,
+      "name": "Carbonado Botkiller Sniper Rifle Mk.I",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Carbonado Botkiller Sniper Rifle Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 900,
+      "name": "Carbonado Botkiller Minigun Mk.I",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Carbonado Botkiller Minigun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 901,
+      "name": "Carbonado Botkiller Knife Mk.I",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Carbonado Botkiller Knife Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 902,
+      "name": "Carbonado Botkiller Wrench Mk.I",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Carbonado Botkiller Wrench Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 903,
+      "name": "Carbonado Botkiller Medi Gun Mk.I",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Carbonado Botkiller Medi Gun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 904,
+      "name": "Carbonado Botkiller Stickybomb Launcher Mk.I",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Carbonado Botkiller Stickybomb Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 905,
+      "name": "Carbonado Botkiller Flame Thrower Mk.I",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Carbonado Botkiller Flame Thrower Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 906,
+      "name": "Carbonado Botkiller Scattergun Mk.I",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Carbonado Botkiller Scattergun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 907,
+      "name": "Carbonado Botkiller Rocket Launcher Mk.I",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Carbonado Botkiller Rocket Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 908,
+      "name": "Diamond Botkiller Sniper Rifle Mk.I",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Diamond Botkiller Sniper Rifle Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 909,
+      "name": "Diamond Botkiller Minigun Mk.I",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Diamond Botkiller Minigun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 910,
+      "name": "Diamond Botkiller Knife Mk.I",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Diamond Botkiller Knife Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 911,
+      "name": "Diamond Botkiller Wrench Mk.I",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Diamond Botkiller Wrench Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 912,
+      "name": "Diamond Botkiller Medi Gun Mk.I",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Diamond Botkiller Medi Gun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 913,
+      "name": "Diamond Botkiller Stickybomb Launcher Mk.I",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Diamond Botkiller Stickybomb Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 914,
+      "name": "Diamond Botkiller Flame Thrower Mk.I",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Diamond Botkiller Flame Thrower Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 915,
+      "name": "Diamond Botkiller Scattergun Mk.I",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Diamond Botkiller Scattergun Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 916,
+      "name": "Diamond Botkiller Rocket Launcher Mk.I",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Diamond Botkiller Rocket Launcher Mk.I",
+      "default_paint": 0
+    },
+    {
+      "id": 933,
+      "name": "Ap-Sap",
+      "model": "models/weapons/c_models/c_p2rec/c_p2rec.mdl",
+      "definition_name": "The Ap-Sap",
+      "default_paint": 0
+    },
+    {
+      "id": 954,
+      "name": "Memory Maker",
+      "model": "models/weapons/c_models/c_8mm_camera/c_8mm_camera.mdl",
+      "definition_name": "Memory Maker",
+      "default_paint": 0
+    },
+    {
+      "id": 957,
+      "name": "Silver Botkiller Sniper Rifle Mk.II",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Silver Botkiller Sniper Rifle Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 958,
+      "name": "Silver Botkiller Minigun Mk.II",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Silver Botkiller Minigun Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 959,
+      "name": "Silver Botkiller Knife Mk.II",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Silver Botkiller Knife Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 960,
+      "name": "Silver Botkiller Wrench Mk.II",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Silver Botkiller Wrench Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 961,
+      "name": "Silver Botkiller Medi Gun Mk.II",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Silver Botkiller Medi Gun Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 962,
+      "name": "Silver Botkiller Stickybomb Launcher Mk.II",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Silver Botkiller Stickybomb Launcher Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 963,
+      "name": "Silver Botkiller Flame Thrower Mk.II",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Silver Botkiller Flame Thrower Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 964,
+      "name": "Silver Botkiller Scattergun Mk.II",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Silver Botkiller Scattergun Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 965,
+      "name": "Silver Botkiller Rocket Launcher Mk.II",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Silver Botkiller Rocket Launcher Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 966,
+      "name": "Gold Botkiller Sniper Rifle Mk.II",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "Gold Botkiller Sniper Rifle Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 967,
+      "name": "Gold Botkiller Minigun Mk.II",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "Gold Botkiller Minigun Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 968,
+      "name": "Gold Botkiller Knife Mk.II",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "Gold Botkiller Knife Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 969,
+      "name": "Gold Botkiller Wrench Mk.II",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "Gold Botkiller Wrench Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 970,
+      "name": "Gold Botkiller Medi Gun Mk.II",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "Gold Botkiller Medi Gun Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 971,
+      "name": "Gold Botkiller Stickybomb Launcher Mk.II",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "Gold Botkiller Stickybomb Launcher Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 972,
+      "name": "Gold Botkiller Flame Thrower Mk.II",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "Gold Botkiller Flame Thrower Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 973,
+      "name": "Gold Botkiller Scattergun Mk.II",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "Gold Botkiller Scattergun Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 974,
+      "name": "Gold Botkiller Rocket Launcher Mk.II",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "Gold Botkiller Rocket Launcher Mk.II",
+      "default_paint": 0
+    },
+    {
+      "id": 1000,
+      "name": "Festive Axtinguisher",
+      "model": "models/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro_xmas.mdl",
+      "definition_name": "Festive Axtinguisher",
+      "default_paint": 0
+    },
+    {
+      "id": 1001,
+      "name": "Festive Buff Banner",
+      "model": "models/weapons/c_models/c_bugle/c_bugle.mdl",
+      "definition_name": "Festive Buff Banner",
+      "default_paint": 0
+    },
+    {
+      "id": 1002,
+      "name": "Festive Sandvich",
+      "model": "models/weapons/c_models/c_sandwich/c_sandwich_xmas.mdl",
+      "definition_name": "Festive Sandvich",
+      "default_paint": 0
+    },
+    {
+      "id": 1003,
+      "name": "Festive Übersaw",
+      "model": "models/weapons/c_models/c_ubersaw/c_ubersaw_xmas.mdl",
+      "definition_name": "Festive Ubersaw",
+      "default_paint": 0
+    },
+    {
+      "id": 1004,
+      "name": "Festive Frontier Justice",
+      "model": "models/weapons/c_models/c_frontierjustice/c_frontierjustice_xmas.mdl",
+      "definition_name": "Festive Frontier Justice",
+      "default_paint": 0
+    },
+    {
+      "id": 1005,
+      "name": "Festive Huntsman",
+      "model": "models/weapons/c_models/c_bow/c_bow_xmas.mdl",
+      "definition_name": "Festive Huntsman",
+      "default_paint": 0
+    },
+    {
+      "id": 1006,
+      "name": "Festive Ambassador",
+      "model": "models/weapons/c_models/c_ambassador/c_ambassador_xmas.mdl",
+      "definition_name": "Festive Ambassador",
+      "default_paint": 0
+    },
+    {
+      "id": 1007,
+      "name": "Festive Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher_xmas.mdl",
+      "definition_name": "Festive Grenade Launcher",
+      "default_paint": 0
+    },
+    {
+      "id": 1071,
+      "name": "Golden Frying Pan",
+      "model": "models/weapons/c_models/c_frying_pan/c_frying_pan.mdl",
+      "definition_name": "Gold Frying Pan",
+      "default_paint": 0
+    },
+    {
+      "id": 1078,
+      "name": "Festive Force-a-Nature",
+      "model": "models/weapons/c_models/c_xms_double_barrel.mdl",
+      "definition_name": "Festive Force-a-Nature",
+      "default_paint": 0
+    },
+    {
+      "id": 1080,
+      "name": "Festive Sapper",
+      "model": "models/weapons/c_models/c_sapper/c_sapper_xmas.mdl",
+      "definition_name": "Festive Sapper",
+      "default_paint": 0
+    },
+    {
+      "id": 1081,
+      "name": "Festive Flare Gun",
+      "model": "models/weapons/c_models/c_xms_flaregun/c_xms_flaregun.mdl",
+      "definition_name": "Festive Flare Gun",
+      "default_paint": 0
+    },
+    {
+      "id": 1082,
+      "name": "Festive Eyelander",
+      "model": "models/weapons/c_models/c_claymore/c_claymore_xmas.mdl",
+      "definition_name": "Festive Eyelander",
+      "default_paint": 0
+    },
+    {
+      "id": 1083,
+      "name": "Festive Jarate",
+      "model": "models/weapons/c_models/c_xms_urinejar.mdl",
+      "definition_name": "Festive Jarate",
+      "default_paint": 0
+    },
+    {
+      "id": 1084,
+      "name": "Festive Gloves of Running Urgently",
+      "model": "models/weapons/c_models/c_boxing_gloves/c_boxing_gloves_xmas.mdl",
+      "definition_name": "Festive Gloves of Running Urgently",
+      "default_paint": 0
+    },
+    {
+      "id": 1086,
+      "name": "Festive Wrangler",
+      "model": "models/weapons/c_models/c_wrangler_xmas.mdl",
+      "definition_name": "Festive Wrangler",
+      "default_paint": 0
+    },
+    {
+      "id": 1098,
+      "name": "Classic",
+      "model": "models/weapons/c_models/c_tfc_sniperrifle/c_tfc_sniperrifle.mdl",
+      "definition_name": "The Classic",
+      "default_paint": 0
+    },
+    {
+      "id": 1100,
+      "name": "Bread Bite",
+      "model": "models/weapons/c_models/c_breadmonster_gloves/c_breadmonster_gloves.mdl",
+      "definition_name": "The Bread Bite",
+      "default_paint": 0
+    },
+    {
+      "id": 1102,
+      "name": "Snack Attack",
+      "model": "models/weapons/c_models/c_breadmonster_sapper/c_breadmonster_sapper.mdl",
+      "definition_name": "The Snack Attack",
+      "default_paint": 0
+    },
+    {
+      "id": 1105,
+      "name": "Self-Aware Beauty Mark",
+      "model": "models/weapons/c_models/c_breadmonster/c_breadmonster.mdl",
+      "definition_name": "The Self-Aware Beauty Mark",
+      "default_paint": 0
+    },
+    {
+      "id": 1121,
+      "name": "Mutated Milk",
+      "model": "models/weapons/c_models/c_breadmonster/c_breadmonster_milk.mdl",
+      "definition_name": "Mutated Milk",
+      "default_paint": 0
+    },
+    {
+      "id": 1123,
+      "name": "Necro Smasher",
+      "model": "models/weapons/c_models/c_carnival_mallet/c_carnival_mallet.mdl",
+      "definition_name": "Necro Smasher",
+      "default_paint": 0
+    },
+    {
+      "id": 1141,
+      "name": "Festive Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "Festive Shotgun 2014",
+      "default_paint": 0
+    },
+    {
+      "id": 1142,
+      "name": "Festive Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver_xmas.mdl",
+      "definition_name": "Festive Revolver 2014",
+      "default_paint": 0
+    },
+    {
+      "id": 1143,
+      "name": "Festive Bonesaw",
+      "model": "models/weapons/c_models/c_bonesaw/c_bonesaw_xmas.mdl",
+      "definition_name": "Festive Bonesaw 2014",
+      "default_paint": 0
+    },
+    {
+      "id": 1144,
+      "name": "Festive Chargin' Targe",
+      "model": "models/weapons/c_models/c_targe/c_targe_xmas.mdl",
+      "definition_name": "Festive Targe 2014",
+      "default_paint": 0
+    },
+    {
+      "id": 1145,
+      "name": "Festive Bonk! Atomic Punch",
+      "model": "models/weapons/c_models/c_xms_energy_drink/c_xms_energy_drink.mdl",
+      "definition_name": "Festive Bonk 2014",
+      "default_paint": 0
+    },
+    {
+      "id": 1146,
+      "name": "Festive Backburner",
+      "model": "models/weapons/c_models/c_flamethrower/c_backburner_xmas.mdl",
+      "definition_name": "Festive Backburner 2014",
+      "default_paint": 0
+    },
+    {
+      "id": 1149,
+      "name": "Festive SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "Festive SMG 2014",
+      "default_paint": 0
+    },
+    {
+      "id": 1178,
+      "name": "Dragon's Fury",
+      "model": "models/weapons/c_models/c_flameball/c_flameball.mdl",
+      "definition_name": "The Dragon's Fury",
+      "default_paint": 0
+    },
+    {
+      "id": 1179,
+      "name": "Thermal Thruster",
+      "model": "models/weapons/c_models/c_rocketpack/c_rocketpack.mdl",
+      "definition_name": "The Thermal Thruster",
+      "default_paint": 0
+    },
+    {
+      "id": 1180,
+      "name": "Gas Passer",
+      "model": "models/weapons/c_models/c_gascan/c_gascan.mdl",
+      "definition_name": "The Gas Passer",
+      "default_paint": 0
+    },
+    {
+      "id": 1181,
+      "name": "Hot Hand",
+      "model": "models/weapons/c_models/c_slapping_glove/c_slapping_glove.mdl",
+      "definition_name": "The Hot Hand",
+      "default_paint": 0
+    },
+    {
+      "id": 1184,
+      "name": "Gloves of Running Urgently",
+      "model": "models/weapons/c_models/c_boxing_gloves/c_boxing_gloves.mdl",
+      "definition_name": "Gloves of Running Urgently MvM",
+      "default_paint": 0
+    },
+    {
+      "id": 1190,
+      "name": "Second Banana",
+      "model": "models/weapons/c_models/c_banana/c_banana.mdl",
+      "definition_name": "The Second Banana",
+      "default_paint": 0
+    },
+    {
+      "id": 1205,
+      "name": "Reissued Enthusiast's Timepiece",
+      "model": "models/weapons/v_models/v_ttg_watch_spy.mdl",
+      "definition_name": "TTG Watch 2026",
+      "default_paint": 0
+    },
+    {
+      "id": 15000,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "concealedkiller_sniperrifle_nightowl",
+      "default_paint": 14
+    },
+    {
+      "id": 15001,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "concealedkiller_smg_woodsywidowmaker",
+      "default_paint": 13
+    },
+    {
+      "id": 15002,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "concealedkiller_scattergun_nightterror",
+      "default_paint": 11
+    },
+    {
+      "id": 15003,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "concealedkiller_shotgun_backwoodsboomstick",
+      "default_paint": 12
+    },
+    {
+      "id": 15004,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "concealedkiller_minigun_kingofthejungle",
+      "default_paint": 10
+    },
+    {
+      "id": 15005,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "concealedkiller_flamethrower_forestfire",
+      "default_paint": 9
+    },
+    {
+      "id": 15006,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "concealedkiller_rocketlauncher_woodlandwarrior",
+      "default_paint": 6
+    },
+    {
+      "id": 15007,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "concealedkiller_sniperrifle_purplerange",
+      "default_paint": 7
+    },
+    {
+      "id": 15008,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "concealedkiller_medigun_maskedmender",
+      "default_paint": 5
+    },
+    {
+      "id": 15009,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "concealedkiller_stickybomblauncher_suddenflurry",
+      "default_paint": 8
+    },
+    {
+      "id": 15010,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "concealedkiller_medigun_wrappedreviver",
+      "default_paint": 2
+    },
+    {
+      "id": 15011,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "concealedkiller_revolver_psychedelicslugger",
+      "default_paint": 3
+    },
+    {
+      "id": 15012,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "concealedkiller_stickybomblauncher_carpetbomber",
+      "default_paint": 4
+    },
+    {
+      "id": 15013,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "concealedkiller_pistol_redrockroscoe",
+      "default_paint": 0
+    },
+    {
+      "id": 15014,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "concealedkiller_rocketlauncher_sandcannon",
+      "default_paint": 1
+    },
+    {
+      "id": 15015,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "craftsmann_scattergun_tartantorpedo",
+      "default_paint": 15
+    },
+    {
+      "id": 15016,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "craftsmann_shotgun_rusticruiner",
+      "default_paint": 16
+    },
+    {
+      "id": 15017,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "craftsmann_flamethrower_barnburner",
+      "default_paint": 17
+    },
+    {
+      "id": 15018,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "craftsmann_pistol_homemadeheater",
+      "default_paint": 18
+    },
+    {
+      "id": 15019,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "craftsmann_sniperrifle_lumberfromdownunder",
+      "default_paint": 19
+    },
+    {
+      "id": 15020,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "craftsmann_minigun_ironwood",
+      "default_paint": 20
+    },
+    {
+      "id": 15021,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "craftsmann_scattergun_countrycrusher",
+      "default_paint": 21
+    },
+    {
+      "id": 15022,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "craftsmann_smg_plaidpotshotter",
+      "default_paint": 22
+    },
+    {
+      "id": 15023,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "craftsmann_sniperrifle_shotinthedark",
+      "default_paint": 23
+    },
+    {
+      "id": 15024,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "craftsmann_stickybomblauncher_blastedbombardier",
+      "default_paint": 24
+    },
+    {
+      "id": 15025,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "craftsmann_medigun_reclaimedreanimator",
+      "default_paint": 25
+    },
+    {
+      "id": 15026,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "craftsmann_minigun_antiqueannihilator",
+      "default_paint": 26
+    },
+    {
+      "id": 15027,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "craftsmann_revolver_oldcountry",
+      "default_paint": 27
+    },
+    {
+      "id": 15028,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "craftsmann_rocketlauncher_americanpastoral",
+      "default_paint": 28
+    },
+    {
+      "id": 15029,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "craftsmann_scattergun_backcountryblaster",
+      "default_paint": 29
+    },
+    {
+      "id": 15030,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "teufort_flamethrower_bovineblazemaker",
+      "default_paint": 30
+    },
+    {
+      "id": 15031,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "teufort_minigun_warroom",
+      "default_paint": 31
+    },
+    {
+      "id": 15032,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "teufort_smg_treadplatetormenter",
+      "default_paint": 32
+    },
+    {
+      "id": 15033,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "teufort_sniperrifle_bogtrotter",
+      "default_paint": 33
+    },
+    {
+      "id": 15034,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "teufort_flamethrower_earthskyandfire",
+      "default_paint": 34
+    },
+    {
+      "id": 15035,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "teufort_pistol_hickoryholepuncher",
+      "default_paint": 35
+    },
+    {
+      "id": 15036,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "teufort_scattergun_sprucedeuce",
+      "default_paint": 36
+    },
+    {
+      "id": 15037,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "teufort_smg_teamsprayer",
+      "default_paint": 37
+    },
+    {
+      "id": 15038,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "teufort_stickybomblauncher_rooftopwrangler",
+      "default_paint": 38
+    },
+    {
+      "id": 15039,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "teufort_medigun_civilservant",
+      "default_paint": 39
+    },
+    {
+      "id": 15040,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "teufort_minigun_citizenpain",
+      "default_paint": 40
+    },
+    {
+      "id": 15041,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "teufort_pistol_localhero",
+      "default_paint": 41
+    },
+    {
+      "id": 15042,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "teufort_revolver_mayor",
+      "default_paint": 42
+    },
+    {
+      "id": 15043,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "teufort_rocketlauncher_smalltownbringdown",
+      "default_paint": 43
+    },
+    {
+      "id": 15044,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "teufort_shotgun_civicduty",
+      "default_paint": 44
+    },
+    {
+      "id": 15045,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "powerhouse_stickybomblauncher_liquidasset",
+      "default_paint": 45
+    },
+    {
+      "id": 15046,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "powerhouse_pistol_blackdahlia",
+      "default_paint": 46
+    },
+    {
+      "id": 15047,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "powerhouse_shotgun_lightningrod",
+      "default_paint": 47
+    },
+    {
+      "id": 15048,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "powerhouse_stickybomblauncher_pinkelephant",
+      "default_paint": 48
+    },
+    {
+      "id": 15049,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "powerhouse_flamethrower_flashfryer",
+      "default_paint": 49
+    },
+    {
+      "id": 15050,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "powerhouse_medigun_sparkoflife",
+      "default_paint": 50
+    },
+    {
+      "id": 15051,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "powerhouse_revolver_deadreckoner",
+      "default_paint": 51
+    },
+    {
+      "id": 15052,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "powerhouse_rocketlauncher_shellshocker",
+      "default_paint": 52
+    },
+    {
+      "id": 15053,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "powerhouse_scattergun_currentevent",
+      "default_paint": 53
+    },
+    {
+      "id": 15054,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "powerhouse_flamethrower_turbinetorcher",
+      "default_paint": 54
+    },
+    {
+      "id": 15055,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "powerhouse_minigun_brickhouse",
+      "default_paint": 55
+    },
+    {
+      "id": 15056,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "powerhouse_pistol_sandstonespecial",
+      "default_paint": 56
+    },
+    {
+      "id": 15057,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "powerhouse_rocketlauncher_aquamarine",
+      "default_paint": 57
+    },
+    {
+      "id": 15058,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "powerhouse_smg_lowprofile",
+      "default_paint": 58
+    },
+    {
+      "id": 15059,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "powerhouse_sniperrifle_thunderbolt",
+      "default_paint": 59
+    },
+    {
+      "id": 15060,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "harvest_pistol_macabreweb",
+      "default_paint": 63
+    },
+    {
+      "id": 15061,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "harvest_pistol_nutcracker",
+      "default_paint": 61
+    },
+    {
+      "id": 15062,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "harvest_revolver_boneyard",
+      "default_paint": 64
+    },
+    {
+      "id": 15063,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "harvest_revolver_wildwood",
+      "default_paint": 65
+    },
+    {
+      "id": 15064,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "harvest_revolver_macabreweb",
+      "default_paint": 63
+    },
+    {
+      "id": 15065,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "harvest_scattergun_macabreweb",
+      "default_paint": 63
+    },
+    {
+      "id": 15066,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "harvest_flamethrower_autumn",
+      "default_paint": 60
+    },
+    {
+      "id": 15067,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "harvest_flamethrower_pumpkinpatch",
+      "default_paint": 62
+    },
+    {
+      "id": 15068,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "harvest_flamethrower_nutcracker",
+      "default_paint": 61
+    },
+    {
+      "id": 15069,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "harvest_scattergun_nutcracker",
+      "default_paint": 61
+    },
+    {
+      "id": 15070,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "harvest_sniperrifle_pumpkinpatch",
+      "default_paint": 62
+    },
+    {
+      "id": 15071,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "harvest_sniperrifle_boneyard",
+      "default_paint": 64
+    },
+    {
+      "id": 15072,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "harvest_sniperrifle_wildwood",
+      "default_paint": 65
+    },
+    {
+      "id": 15073,
+      "name": "Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "harvest_wrench_nutcracker",
+      "default_paint": 61
+    },
+    {
+      "id": 15074,
+      "name": "Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "harvest_wrench_autumn",
+      "default_paint": 60
+    },
+    {
+      "id": 15075,
+      "name": "Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "harvest_wrench_boneyard",
+      "default_paint": 64
+    },
+    {
+      "id": 15076,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "harvest_smg_wildwood",
+      "default_paint": 65
+    },
+    {
+      "id": 15077,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "harvest_grenadelauncher_autumn",
+      "default_paint": 60
+    },
+    {
+      "id": 15078,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "harvest_medigun_wildwood",
+      "default_paint": 65
+    },
+    {
+      "id": 15079,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "harvest_grenadelauncher_macabreweb",
+      "default_paint": 63
+    },
+    {
+      "id": 15080,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "harvest_knife_boneyard",
+      "default_paint": 64
+    },
+    {
+      "id": 15081,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "harvest_rocketlauncher_autumn",
+      "default_paint": 60
+    },
+    {
+      "id": 15082,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "harvest_stickybomblauncher_autumn",
+      "default_paint": 60
+    },
+    {
+      "id": 15083,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "harvest_stickybomblauncher_pumpkinpatch",
+      "default_paint": 62
+    },
+    {
+      "id": 15084,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "harvest_stickybomblauncher_macabreweb",
+      "default_paint": 63
+    },
+    {
+      "id": 15085,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "harvest_shotgun_autumn",
+      "default_paint": 60
+    },
+    {
+      "id": 15086,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "harvest_minigun_macabreweb",
+      "default_paint": 63
+    },
+    {
+      "id": 15087,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "harvest_minigun_pumpkinpatch",
+      "default_paint": 62
+    },
+    {
+      "id": 15088,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "harvest_minigun_nutcracker",
+      "default_paint": 61
+    },
+    {
+      "id": 15089,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "pyroland_flamethrower_balloonicorn",
+      "default_paint": 66
+    },
+    {
+      "id": 15090,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "pyroland_flamethrower_rainbow",
+      "default_paint": 67
+    },
+    {
+      "id": 15091,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "pyroland_grenadelauncher_rainbow",
+      "default_paint": 67
+    },
+    {
+      "id": 15092,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "pyroland_grenadelauncher_sweetdreams",
+      "default_paint": 68
+    },
+    {
+      "id": 15094,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "pyroland_knife_bluemew",
+      "default_paint": 69
+    },
+    {
+      "id": 15095,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "pyroland_knife_braincandy",
+      "default_paint": 70
+    },
+    {
+      "id": 15096,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "pyroland_knife_stabbedtohell",
+      "default_paint": 71
+    },
+    {
+      "id": 15097,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "pyroland_medigun_flowerpower",
+      "default_paint": 72
+    },
+    {
+      "id": 15098,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "pyroland_minigun_braincandy",
+      "default_paint": 70
+    },
+    {
+      "id": 15099,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "pyroland_minigun_mistercuddles",
+      "default_paint": 73
+    },
+    {
+      "id": 15100,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "pyroland_pistol_bluemew",
+      "default_paint": 69
+    },
+    {
+      "id": 15101,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "pyroland_pistol_braincandy",
+      "default_paint": 70
+    },
+    {
+      "id": 15102,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "pyroland_pistol_shottohell",
+      "default_paint": 74
+    },
+    {
+      "id": 15103,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "pyroland_revolver_flowerpower",
+      "default_paint": 72
+    },
+    {
+      "id": 15104,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "pyroland_rocketlauncher_bluemew",
+      "default_paint": 69
+    },
+    {
+      "id": 15105,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "pyroland_rocketlauncher_braincandy",
+      "default_paint": 70
+    },
+    {
+      "id": 15106,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "pyroland_scattergun_bluemew",
+      "default_paint": 69
+    },
+    {
+      "id": 15107,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "pyroland_scattergun_flowerpower",
+      "default_paint": 72
+    },
+    {
+      "id": 15108,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "pyroland_scattergun_shottohell",
+      "default_paint": 74
+    },
+    {
+      "id": 15109,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "pyroland_shotgun_flowerpower",
+      "default_paint": 72
+    },
+    {
+      "id": 15110,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "pyroland_smg_bluemew",
+      "default_paint": 69
+    },
+    {
+      "id": 15111,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "pyroland_sniperrifle_balloonicorn",
+      "default_paint": 66
+    },
+    {
+      "id": 15112,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "pyroland_sniperrifle_rainbow",
+      "default_paint": 67
+    },
+    {
+      "id": 15113,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "pyroland_stickybomblauncher_sweetdreams",
+      "default_paint": 68
+    },
+    {
+      "id": 15114,
+      "name": "Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "pyroland_wrench_torquedtohell",
+      "default_paint": 75
+    },
+    {
+      "id": 15115,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "gentlemanne_flamethrower_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15116,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "gentlemanne_grenadelauncher_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15117,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "gentlemanne_grenadelauncher_topshelf",
+      "default_paint": 77
+    },
+    {
+      "id": 15118,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "gentlemanne_knife_dressedtokill",
+      "default_paint": 78
+    },
+    {
+      "id": 15119,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "gentlemanne_knife_topshelf",
+      "default_paint": 77
+    },
+    {
+      "id": 15120,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "gentlemanne_medigun_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15121,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "gentlemanne_medigun_dressedtokill",
+      "default_paint": 78
+    },
+    {
+      "id": 15122,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "gentlemanne_medigun_highrollers",
+      "default_paint": 79
+    },
+    {
+      "id": 15123,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "gentlemanne_minigun_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15124,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "gentlemanne_minigun_dressedtokill",
+      "default_paint": 78
+    },
+    {
+      "id": 15125,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "gentlemanne_minigun_topshelf",
+      "default_paint": 77
+    },
+    {
+      "id": 15126,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "gentlemanne_pistol_dressedtokill",
+      "default_paint": 78
+    },
+    {
+      "id": 15127,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "gentlemanne_revolver_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15128,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "gentlemanne_revolver_topshelf",
+      "default_paint": 77
+    },
+    {
+      "id": 15129,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "gentlemanne_rocketlauncher_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15130,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "gentlemanne_rocketlauncher_highrollers",
+      "default_paint": 79
+    },
+    {
+      "id": 15131,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "gentlemanne_scattergun_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15132,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "gentlemanne_shotgun_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15133,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "gentlemanne_shotgun_dressedtokill",
+      "default_paint": 78
+    },
+    {
+      "id": 15134,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "gentlemanne_smg_highrollers",
+      "default_paint": 79
+    },
+    {
+      "id": 15135,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "gentlemanne_sniperrifle_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15136,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "gentlemanne_sniperrifle_dressedtokill",
+      "default_paint": 78
+    },
+    {
+      "id": 15137,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "gentlemanne_stickybomblauncher_coffinnail",
+      "default_paint": 76
+    },
+    {
+      "id": 15138,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "gentlemanne_stickybomblauncher_dressedtokill",
+      "default_paint": 78
+    },
+    {
+      "id": 15139,
+      "name": "Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "gentlemanne_wrench_dressedtokill",
+      "default_paint": 78
+    },
+    {
+      "id": 15140,
+      "name": "Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "gentlemanne_wrench_topshelf",
+      "default_paint": 77
+    },
+    {
+      "id": 15141,
+      "name": "Flame Thrower",
+      "model": "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl",
+      "definition_name": "warbird_flamethrower_warhawk",
+      "default_paint": 80
+    },
+    {
+      "id": 15142,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "warbird_grenadelauncher_warhawk",
+      "default_paint": 80
+    },
+    {
+      "id": 15143,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "warbird_knife_blitzkrieg",
+      "default_paint": 81
+    },
+    {
+      "id": 15144,
+      "name": "Knife",
+      "model": "models/weapons/c_models/c_knife/c_knife.mdl",
+      "definition_name": "warbird_knife_airwolf",
+      "default_paint": 82
+    },
+    {
+      "id": 15145,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "warbird_medigun_blitzkrieg",
+      "default_paint": 81
+    },
+    {
+      "id": 15146,
+      "name": "Medi Gun",
+      "model": "models/weapons/c_models/c_medigun/c_medigun.mdl",
+      "definition_name": "warbird_medigun_corsair",
+      "default_paint": 83
+    },
+    {
+      "id": 15147,
+      "name": "Minigun",
+      "model": "models/weapons/c_models/c_minigun/c_minigun.mdl",
+      "definition_name": "warbird_minigun_butcherbird",
+      "default_paint": 84
+    },
+    {
+      "id": 15148,
+      "name": "Pistol",
+      "model": "models/weapons/c_models/c_pistol/c_pistol.mdl",
+      "definition_name": "warbird_pistol_blitzkrieg",
+      "default_paint": 81
+    },
+    {
+      "id": 15149,
+      "name": "Revolver",
+      "model": "models/weapons/c_models/c_revolver/c_revolver.mdl",
+      "definition_name": "warbird_revolver_blitzkrieg",
+      "default_paint": 81
+    },
+    {
+      "id": 15150,
+      "name": "Rocket Launcher",
+      "model": "models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl",
+      "definition_name": "warbird_rocketlauncher_warhawk",
+      "default_paint": 80
+    },
+    {
+      "id": 15151,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "warbird_scattergun_killerbee",
+      "default_paint": 85
+    },
+    {
+      "id": 15152,
+      "name": "Shotgun",
+      "model": "models/weapons/c_models/c_shotgun/c_shotgun.mdl",
+      "definition_name": "warbird_shotgun_redbear",
+      "default_paint": 86
+    },
+    {
+      "id": 15153,
+      "name": "SMG",
+      "model": "models/weapons/c_models/c_smg/c_smg.mdl",
+      "definition_name": "warbird_smg_blitzkrieg",
+      "default_paint": 81
+    },
+    {
+      "id": 15154,
+      "name": "Sniper Rifle",
+      "model": "models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl",
+      "definition_name": "warbird_sniperrifle_airwolf",
+      "default_paint": 82
+    },
+    {
+      "id": 15155,
+      "name": "Stickybomb Launcher",
+      "model": "models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl",
+      "definition_name": "warbird_stickybomblauncher_blitzkrieg",
+      "default_paint": 81
+    },
+    {
+      "id": 15156,
+      "name": "Wrench",
+      "model": "models/weapons/c_models/c_wrench/c_wrench.mdl",
+      "definition_name": "warbird_wrench_airwolf",
+      "default_paint": 82
+    },
+    {
+      "id": 15157,
+      "name": "Scattergun",
+      "model": "models/weapons/c_models/c_scattergun.mdl",
+      "definition_name": "warbird_scattergun_corsair",
+      "default_paint": 83
+    },
+    {
+      "id": 15158,
+      "name": "Grenade Launcher",
+      "model": "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl",
+      "definition_name": "warbird_grenadelauncher_butcherbird",
+      "default_paint": 84
+    },
+    {
+      "id": 5843,
+      "name": "Civilian Grade Stat Clock",
+      "model": "models/weapons/c_models/stattrack.mdl",
+      "definition_name": "Common Stat Clock",
+      "default_paint": 0
+    },
+    {
+      "id": 9536,
+      "name": "War Paint (unapplied)",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit",
+      "default_paint": 0
+    },
+    {
+      "id": 172,
+      "name": "Scotsman's Skullcutter",
+      "model": "models/workshop/weapons/c_models/c_battleaxe/c_battleaxe.mdl",
+      "definition_name": "The Scotsman's Skullcutter",
+      "default_paint": 0
+    },
+    {
+      "id": 214,
+      "name": "Powerjack",
+      "model": "models/workshop/weapons/c_models/c_powerjack/c_powerjack.mdl",
+      "definition_name": "The Powerjack",
+      "default_paint": 0
+    },
+    {
+      "id": 215,
+      "name": "Degreaser",
+      "model": "models/workshop/weapons/c_models/c_degreaser/c_degreaser.mdl",
+      "definition_name": "The Degreaser",
+      "default_paint": 0
+    },
+    {
+      "id": 220,
+      "name": "Shortstop",
+      "model": "models/workshop/weapons/c_models/c_shortstop/c_shortstop.mdl",
+      "definition_name": "The Shortstop",
+      "default_paint": 0
+    },
+    {
+      "id": 221,
+      "name": "Holy Mackerel",
+      "model": "models/workshop/weapons/c_models/c_holymackerel/c_holymackerel.mdl",
+      "definition_name": "The Holy Mackerel",
+      "default_paint": 0
+    },
+    {
+      "id": 228,
+      "name": "Black Box",
+      "model": "models/workshop/weapons/c_models/c_blackbox/c_blackbox.mdl",
+      "definition_name": "The Black Box",
+      "default_paint": 0
+    },
+    {
+      "id": 304,
+      "name": "Amputator",
+      "model": "models/workshop/weapons/c_models/c_amputator/c_amputator.mdl",
+      "definition_name": "The Amputator",
+      "default_paint": 0
+    },
+    {
+      "id": 305,
+      "name": "Crusader's Crossbow",
+      "model": "models/workshop/weapons/c_models/c_crusaders_crossbow/c_crusaders_crossbow.mdl",
+      "definition_name": "The Crusader's Crossbow",
+      "default_paint": 0
+    },
+    {
+      "id": 308,
+      "name": "Loch-n-Load",
+      "model": "models/workshop/weapons/c_models/c_lochnload/c_lochnload.mdl",
+      "definition_name": "The Loch-n-Load",
+      "default_paint": 0
+    },
+    {
+      "id": 312,
+      "name": "Brass Beast",
+      "model": "models/workshop/weapons/c_models/c_gatling_gun/c_gatling_gun.mdl",
+      "definition_name": "The Brass Beast",
+      "default_paint": 0
+    },
+    {
+      "id": 326,
+      "name": "Back Scratcher",
+      "model": "models/workshop/weapons/c_models/c_back_scratcher/c_back_scratcher.mdl",
+      "definition_name": "The Back Scratcher",
+      "default_paint": 0
+    },
+    {
+      "id": 327,
+      "name": "Claidheamh Mòr",
+      "model": "models/workshop/weapons/c_models/c_claidheamohmor/c_claidheamohmor.mdl",
+      "definition_name": "The Claidheamohmor",
+      "default_paint": 0
+    },
+    {
+      "id": 329,
+      "name": "Jag",
+      "model": "models/workshop/weapons/c_models/c_jag/c_jag.mdl",
+      "definition_name": "The Jag",
+      "default_paint": 0
+    },
+    {
+      "id": 351,
+      "name": "Detonator",
+      "model": "models/workshop/weapons/c_models/c_detonator/c_detonator.mdl",
+      "definition_name": "The Detonator",
+      "default_paint": 0
+    },
+    {
+      "id": 401,
+      "name": "Shahanshah",
+      "model": "models/workshop/weapons/c_models/c_scimitar/c_scimitar.mdl",
+      "definition_name": "The Shahanshah",
+      "default_paint": 0
+    },
+    {
+      "id": 402,
+      "name": "Bazaar Bargain",
+      "model": "models/workshop/weapons/c_models/c_bazaar_sniper/c_bazaar_sniper.mdl",
+      "definition_name": "The Bazaar Bargain",
+      "default_paint": 0
+    },
+    {
+      "id": 404,
+      "name": "Persian Persuader",
+      "model": "models/workshop/weapons/c_models/c_demo_sultan_sword/c_demo_sultan_sword.mdl",
+      "definition_name": "The Persian Persuader",
+      "default_paint": 0
+    },
+    {
+      "id": 415,
+      "name": "Reserve Shooter",
+      "model": "models/workshop/weapons/c_models/c_reserve_shooter/c_reserve_shooter.mdl",
+      "definition_name": "The Reserve Shooter",
+      "default_paint": 0
+    },
+    {
+      "id": 424,
+      "name": "Tomislav",
+      "model": "models/workshop/weapons/c_models/c_tomislav/c_tomislav.mdl",
+      "definition_name": "Tomislav",
+      "default_paint": 0
+    },
+    {
+      "id": 425,
+      "name": "Family Business",
+      "model": "models/workshop/weapons/c_models/c_russian_riot/c_russian_riot.mdl",
+      "definition_name": "The Family Business",
+      "default_paint": 0
+    },
+    {
+      "id": 447,
+      "name": "Disciplinary Action",
+      "model": "models/workshop/weapons/c_models/c_riding_crop/c_riding_crop.mdl",
+      "definition_name": "The Disciplinary Action",
+      "default_paint": 0
+    },
+    {
+      "id": 448,
+      "name": "Soda Popper",
+      "model": "models/workshop/weapons/c_models/c_soda_popper/c_soda_popper.mdl",
+      "definition_name": "The Soda Popper",
+      "default_paint": 0
+    },
+    {
+      "id": 449,
+      "name": "Winger",
+      "model": "models/workshop/weapons/c_models/c_winger_pistol/c_winger_pistol.mdl",
+      "definition_name": "The Winger",
+      "default_paint": 0
+    },
+    {
+      "id": 740,
+      "name": "Scorch Shot",
+      "model": "models/workshop/weapons/c_models/c_scorch_shot/c_scorch_shot.mdl",
+      "definition_name": "The Scorch Shot",
+      "default_paint": 0
+    },
+    {
+      "id": 996,
+      "name": "Loose Cannon",
+      "model": "models/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon.mdl",
+      "definition_name": "The Loose Cannon",
+      "default_paint": 0
+    },
+    {
+      "id": 997,
+      "name": "Rescue Ranger",
+      "model": "models/workshop/weapons/c_models/c_tele_shotgun/c_tele_shotgun.mdl",
+      "definition_name": "The Rescue Ranger",
+      "default_paint": 0
+    },
+    {
+      "id": 1104,
+      "name": "Air Strike",
+      "model": "models/workshop/weapons/c_models/c_atom_launcher/c_atom_launcher.mdl",
+      "definition_name": "The Air Strike",
+      "default_paint": 0
+    },
+    {
+      "id": 1151,
+      "name": "Iron Bomber",
+      "model": "models/workshop/weapons/c_models/c_quadball/c_quadball.mdl",
+      "definition_name": "The Iron Bomber",
+      "default_paint": 0
+    },
+    {
+      "id": 1153,
+      "name": "Panic Attack",
+      "model": "models/workshop/weapons/c_models/c_trenchgun/c_trenchgun.mdl",
+      "definition_name": "Panic Attack Shotgun",
+      "default_paint": 0
+    },
+    {
+      "id": 16102,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 102",
+      "default_paint": 0
+    },
+    {
+      "id": 16104,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 104",
+      "default_paint": 0
+    },
+    {
+      "id": 16105,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 105",
+      "default_paint": 0
+    },
+    {
+      "id": 16106,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 106",
+      "default_paint": 0
+    },
+    {
+      "id": 16109,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 109",
+      "default_paint": 0
+    },
+    {
+      "id": 16112,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 112",
+      "default_paint": 0
+    },
+    {
+      "id": 16113,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 113",
+      "default_paint": 0
+    },
+    {
+      "id": 16114,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 114",
+      "default_paint": 0
+    },
+    {
+      "id": 16120,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 120",
+      "default_paint": 0
+    },
+    {
+      "id": 16122,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 122",
+      "default_paint": 0
+    },
+    {
+      "id": 16130,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 130",
+      "default_paint": 0
+    },
+    {
+      "id": 16139,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 139",
+      "default_paint": 0
+    },
+    {
+      "id": 16143,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 143",
+      "default_paint": 0
+    },
+    {
+      "id": 16144,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 144",
+      "default_paint": 0
+    },
+    {
+      "id": 16151,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 151",
+      "default_paint": 0
+    },
+    {
+      "id": 16160,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 160",
+      "default_paint": 0
+    },
+    {
+      "id": 16161,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 161",
+      "default_paint": 0
+    },
+    {
+      "id": 16163,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 163",
+      "default_paint": 0
+    },
+    {
+      "id": 16300,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 300",
+      "default_paint": 0
+    },
+    {
+      "id": 16301,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 301",
+      "default_paint": 0
+    },
+    {
+      "id": 16302,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 302",
+      "default_paint": 0
+    },
+    {
+      "id": 16303,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 303",
+      "default_paint": 0
+    },
+    {
+      "id": 16304,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 304",
+      "default_paint": 0
+    },
+    {
+      "id": 16305,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 305",
+      "default_paint": 0
+    },
+    {
+      "id": 16306,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 306",
+      "default_paint": 0
+    },
+    {
+      "id": 16307,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 307",
+      "default_paint": 0
+    },
+    {
+      "id": 16308,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 308",
+      "default_paint": 0
+    },
+    {
+      "id": 16309,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 309",
+      "default_paint": 0
+    },
+    {
+      "id": 16310,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 310",
+      "default_paint": 0
+    },
+    {
+      "id": 16390,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 390",
+      "default_paint": 0
+    },
+    {
+      "id": 16391,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 391",
+      "default_paint": 0
+    },
+    {
+      "id": 17200,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 200",
+      "default_paint": 0
+    },
+    {
+      "id": 17201,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 201",
+      "default_paint": 0
+    },
+    {
+      "id": 17202,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 202",
+      "default_paint": 0
+    },
+    {
+      "id": 17203,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 203",
+      "default_paint": 0
+    },
+    {
+      "id": 17204,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 204",
+      "default_paint": 0
+    },
+    {
+      "id": 17205,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 205",
+      "default_paint": 0
+    },
+    {
+      "id": 17206,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 206",
+      "default_paint": 0
+    },
+    {
+      "id": 17207,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 207",
+      "default_paint": 0
+    },
+    {
+      "id": 17208,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 208",
+      "default_paint": 0
+    },
+    {
+      "id": 17209,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 209",
+      "default_paint": 0
+    },
+    {
+      "id": 17210,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 210",
+      "default_paint": 0
+    },
+    {
+      "id": 17211,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 211",
+      "default_paint": 0
+    },
+    {
+      "id": 17212,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 212",
+      "default_paint": 0
+    },
+    {
+      "id": 17213,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 213",
+      "default_paint": 0
+    },
+    {
+      "id": 17214,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 214",
+      "default_paint": 0
+    },
+    {
+      "id": 17215,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 215",
+      "default_paint": 0
+    },
+    {
+      "id": 17217,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 217",
+      "default_paint": 0
+    },
+    {
+      "id": 17218,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 218",
+      "default_paint": 0
+    },
+    {
+      "id": 17220,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 220",
+      "default_paint": 0
+    },
+    {
+      "id": 17221,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 221",
+      "default_paint": 0
+    },
+    {
+      "id": 17223,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 223",
+      "default_paint": 0
+    },
+    {
+      "id": 17224,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 224",
+      "default_paint": 0
+    },
+    {
+      "id": 17225,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 225",
+      "default_paint": 0
+    },
+    {
+      "id": 17226,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 226",
+      "default_paint": 0
+    },
+    {
+      "id": 17228,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 228",
+      "default_paint": 0
+    },
+    {
+      "id": 17230,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 230",
+      "default_paint": 0
+    },
+    {
+      "id": 17232,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 232",
+      "default_paint": 0
+    },
+    {
+      "id": 17234,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 234",
+      "default_paint": 0
+    },
+    {
+      "id": 17235,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 235",
+      "default_paint": 0
+    },
+    {
+      "id": 17236,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 236",
+      "default_paint": 0
+    },
+    {
+      "id": 17237,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 237",
+      "default_paint": 0
+    },
+    {
+      "id": 17238,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 238",
+      "default_paint": 0
+    },
+    {
+      "id": 17239,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 239",
+      "default_paint": 0
+    },
+    {
+      "id": 17240,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 240",
+      "default_paint": 0
+    },
+    {
+      "id": 17241,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 241",
+      "default_paint": 0
+    },
+    {
+      "id": 17242,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 242",
+      "default_paint": 0
+    },
+    {
+      "id": 17243,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 243",
+      "default_paint": 0
+    },
+    {
+      "id": 17244,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 244",
+      "default_paint": 0
+    },
+    {
+      "id": 17245,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 245",
+      "default_paint": 0
+    },
+    {
+      "id": 17246,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 246",
+      "default_paint": 0
+    },
+    {
+      "id": 17247,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 247",
+      "default_paint": 0
+    },
+    {
+      "id": 17248,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 248",
+      "default_paint": 0
+    },
+    {
+      "id": 17249,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 249",
+      "default_paint": 0
+    },
+    {
+      "id": 17250,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 250",
+      "default_paint": 0
+    },
+    {
+      "id": 17251,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 251",
+      "default_paint": 0
+    },
+    {
+      "id": 17252,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 252",
+      "default_paint": 0
+    },
+    {
+      "id": 17253,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 253",
+      "default_paint": 0
+    },
+    {
+      "id": 17254,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 254",
+      "default_paint": 0
+    },
+    {
+      "id": 17255,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 255",
+      "default_paint": 0
+    },
+    {
+      "id": 17256,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 256",
+      "default_paint": 0
+    },
+    {
+      "id": 17257,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 257",
+      "default_paint": 0
+    },
+    {
+      "id": 17258,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 258",
+      "default_paint": 0
+    },
+    {
+      "id": 17259,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 259",
+      "default_paint": 0
+    },
+    {
+      "id": 17260,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 260",
+      "default_paint": 0
+    },
+    {
+      "id": 17261,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 261",
+      "default_paint": 0
+    },
+    {
+      "id": 17262,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 262",
+      "default_paint": 0
+    },
+    {
+      "id": 17263,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 263",
+      "default_paint": 0
+    },
+    {
+      "id": 17264,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 264",
+      "default_paint": 0
+    },
+    {
+      "id": 17265,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 265",
+      "default_paint": 0
+    },
+    {
+      "id": 17266,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 266",
+      "default_paint": 0
+    },
+    {
+      "id": 17267,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 267",
+      "default_paint": 0
+    },
+    {
+      "id": 17268,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 268",
+      "default_paint": 0
+    },
+    {
+      "id": 17269,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 269",
+      "default_paint": 0
+    },
+    {
+      "id": 17270,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 270",
+      "default_paint": 0
+    },
+    {
+      "id": 17271,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 271",
+      "default_paint": 0
+    },
+    {
+      "id": 17272,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 272",
+      "default_paint": 0
+    },
+    {
+      "id": 17273,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 273",
+      "default_paint": 0
+    },
+    {
+      "id": 17275,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 275",
+      "default_paint": 0
+    },
+    {
+      "id": 17276,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 276",
+      "default_paint": 0
+    },
+    {
+      "id": 17277,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 277",
+      "default_paint": 0
+    },
+    {
+      "id": 17278,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 278",
+      "default_paint": 0
+    },
+    {
+      "id": 17279,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 279",
+      "default_paint": 0
+    },
+    {
+      "id": 17280,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 280",
+      "default_paint": 0
+    },
+    {
+      "id": 17281,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 281",
+      "default_paint": 0
+    },
+    {
+      "id": 17282,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 282",
+      "default_paint": 0
+    },
+    {
+      "id": 17283,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 283",
+      "default_paint": 0
+    },
+    {
+      "id": 17284,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 284",
+      "default_paint": 0
+    },
+    {
+      "id": 17285,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 285",
+      "default_paint": 0
+    },
+    {
+      "id": 17286,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 286",
+      "default_paint": 0
+    },
+    {
+      "id": 17287,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 287",
+      "default_paint": 0
+    },
+    {
+      "id": 17289,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 289",
+      "default_paint": 0
+    },
+    {
+      "id": 17290,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 290",
+      "default_paint": 0
+    },
+    {
+      "id": 17291,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 291",
+      "default_paint": 0
+    },
+    {
+      "id": 17292,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 292",
+      "default_paint": 0
+    },
+    {
+      "id": 17293,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 293",
+      "default_paint": 0
+    },
+    {
+      "id": 17294,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 294",
+      "default_paint": 0
+    },
+    {
+      "id": 17295,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 295",
+      "default_paint": 0
+    },
+    {
+      "id": 17296,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 296",
+      "default_paint": 0
+    },
+    {
+      "id": 17297,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 297",
+      "default_paint": 0
+    },
+    {
+      "id": 17400,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 400",
+      "default_paint": 0
+    },
+    {
+      "id": 17401,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 401",
+      "default_paint": 0
+    },
+    {
+      "id": 17402,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 402",
+      "default_paint": 0
+    },
+    {
+      "id": 17403,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 403",
+      "default_paint": 0
+    },
+    {
+      "id": 17404,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 404",
+      "default_paint": 0
+    },
+    {
+      "id": 17405,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 405",
+      "default_paint": 0
+    },
+    {
+      "id": 17406,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 406",
+      "default_paint": 0
+    },
+    {
+      "id": 17407,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 407",
+      "default_paint": 0
+    },
+    {
+      "id": 17408,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 408",
+      "default_paint": 0
+    },
+    {
+      "id": 17409,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 409",
+      "default_paint": 0
+    },
+    {
+      "id": 17410,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 410",
+      "default_paint": 0
+    },
+    {
+      "id": 17411,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 411",
+      "default_paint": 0
+    },
+    {
+      "id": 17412,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 412",
+      "default_paint": 0
+    },
+    {
+      "id": 17413,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 413",
+      "default_paint": 0
+    },
+    {
+      "id": 17414,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 414",
+      "default_paint": 0
+    },
+    {
+      "id": 17415,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 415",
+      "default_paint": 0
+    },
+    {
+      "id": 17416,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 416",
+      "default_paint": 0
+    },
+    {
+      "id": 17417,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 417",
+      "default_paint": 0
+    },
+    {
+      "id": 17418,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 418",
+      "default_paint": 0
+    },
+    {
+      "id": 17419,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 419",
+      "default_paint": 0
+    },
+    {
+      "id": 17420,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 420",
+      "default_paint": 0
+    },
+    {
+      "id": 17421,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 421",
+      "default_paint": 0
+    },
+    {
+      "id": 17422,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 422",
+      "default_paint": 0
+    },
+    {
+      "id": 17423,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 423",
+      "default_paint": 0
+    },
+    {
+      "id": 17424,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 424",
+      "default_paint": 0
+    },
+    {
+      "id": 17425,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 425",
+      "default_paint": 0
+    },
+    {
+      "id": 17426,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 426",
+      "default_paint": 0
+    },
+    {
+      "id": 17427,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 427",
+      "default_paint": 0
+    },
+    {
+      "id": 17428,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 428",
+      "default_paint": 0
+    },
+    {
+      "id": 17429,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 429",
+      "default_paint": 0
+    },
+    {
+      "id": 17430,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 430",
+      "default_paint": 0
+    },
+    {
+      "id": 17431,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 431",
+      "default_paint": 0
+    },
+    {
+      "id": 17432,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 432",
+      "default_paint": 0
+    },
+    {
+      "id": 17433,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 433",
+      "default_paint": 0
+    },
+    {
+      "id": 17434,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 434",
+      "default_paint": 0
+    },
+    {
+      "id": 17435,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 435",
+      "default_paint": 0
+    },
+    {
+      "id": 17436,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 436",
+      "default_paint": 0
+    },
+    {
+      "id": 17437,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 437",
+      "default_paint": 0
+    },
+    {
+      "id": 17438,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 438",
+      "default_paint": 0
+    },
+    {
+      "id": 17439,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 439",
+      "default_paint": 0
+    },
+    {
+      "id": 17440,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 440",
+      "default_paint": 0
+    },
+    {
+      "id": 17441,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 441",
+      "default_paint": 0
+    },
+    {
+      "id": 17442,
+      "name": "War Paint",
+      "model": "models/items/paintkit_tool.mdl",
+      "definition_name": "Paintkit 442",
+      "default_paint": 0
+    }
+  ],
+  "paints": {
+    "0": {
+      "name": "Red Rock Roscoe",
+      "grade": 0
+    },
+    "100": {
+      "name": "100: (Unused) Red Rock Roscoe",
+      "grade": 0
+    },
+    "101": {
+      "name": "101: (Unused) Sand Cannon",
+      "grade": 0
+    },
+    "102": {
+      "name": "Wrapped Reviver Mk.II",
+      "grade": 4
+    },
+    "103": {
+      "name": "103: (Unused) Psychedelic Slugger",
+      "grade": 0
+    },
+    "104": {
+      "name": "Carpet Bomber Mk.II",
+      "grade": 4
+    },
+    "105": {
+      "name": "Masked Mender Mk.II",
+      "grade": 3
+    },
+    "106": {
+      "name": "Woodland Warrior Mk.II",
+      "grade": 4
+    },
+    "107": {
+      "name": "107: (Unused) Purple Range",
+      "grade": 0
+    },
+    "108": {
+      "name": "108: (Unused) Sudden Flurry",
+      "grade": 0
+    },
+    "109": {
+      "name": "Forest Fire Mk.II",
+      "grade": 3
+    },
+    "10": {
+      "name": "King of the Jungle",
+      "grade": 0
+    },
+    "112": {
+      "name": "Backwoods Boomstick Mk.II",
+      "grade": 3
+    },
+    "113": {
+      "name": "Woodsy Widowmaker Mk.II",
+      "grade": 3
+    },
+    "114": {
+      "name": "Night Owl Mk.II",
+      "grade": 3
+    },
+    "117": {
+      "name": "117: (Unused) Barn Burner",
+      "grade": 0
+    },
+    "11": {
+      "name": "Night Terror",
+      "grade": 0
+    },
+    "120": {
+      "name": "Iron Wood Mk.II",
+      "grade": 2
+    },
+    "122": {
+      "name": "Plaid Potshotter Mk.II",
+      "grade": 2
+    },
+    "12": {
+      "name": "Backwoods Boomstick",
+      "grade": 0
+    },
+    "130": {
+      "name": "Bovine Blazemaker Mk.II",
+      "grade": 4
+    },
+    "139": {
+      "name": "Civil Servant Mk.II",
+      "grade": 1
+    },
+    "13": {
+      "name": "Woodsy Widowmaker",
+      "grade": 0
+    },
+    "143": {
+      "name": "Smalltown Bringdown Mk.II",
+      "grade": 1
+    },
+    "144": {
+      "name": "Civic Duty Mk.II",
+      "grade": 1
+    },
+    "145": {
+      "name": "145: (Unused) Liquid Asset",
+      "grade": 0
+    },
+    "148": {
+      "name": "148: (Unused) Pink Elephant",
+      "grade": 0
+    },
+    "14": {
+      "name": "Night Owl",
+      "grade": 0
+    },
+    "151": {
+      "name": "Dead Reckoner Mk.II",
+      "grade": 4
+    },
+    "15": {
+      "name": "Tartan Torpedo",
+      "grade": 0
+    },
+    "160": {
+      "name": "Autumn Mk.II",
+      "grade": 2
+    },
+    "161": {
+      "name": "Nutcracker Mk.II",
+      "grade": 1
+    },
+    "163": {
+      "name": "Macabre Web Mk.II",
+      "grade": 2
+    },
+    "16": {
+      "name": "Rustic Ruiner",
+      "grade": 0
+    },
+    "17": {
+      "name": "Barn Burner",
+      "grade": 0
+    },
+    "18": {
+      "name": "Homemade Heater",
+      "grade": 0
+    },
+    "19": {
+      "name": "Lumber From Down Under",
+      "grade": 0
+    },
+    "1": {
+      "name": "Sand Cannon",
+      "grade": 0
+    },
+    "200": {
+      "name": "Bloom Buffed",
+      "grade": 3
+    },
+    "201": {
+      "name": "Quack Canvassed",
+      "grade": 3
+    },
+    "202": {
+      "name": "Bank Rolled",
+      "grade": 4
+    },
+    "203": {
+      "name": "Merc Stained",
+      "grade": 3
+    },
+    "204": {
+      "name": "Kill Covered",
+      "grade": 4
+    },
+    "205": {
+      "name": "Fire Glazed",
+      "grade": 6
+    },
+    "206": {
+      "name": "Pizza Polished",
+      "grade": 4
+    },
+    "207": {
+      "name": "Bonk Varnished",
+      "grade": 5
+    },
+    "208": {
+      "name": "Star Crossed",
+      "grade": 3
+    },
+    "209": {
+      "name": "Clover Camo'd",
+      "grade": 4
+    },
+    "20": {
+      "name": "Iron Wood",
+      "grade": 0
+    },
+    "210": {
+      "name": "Freedom Wrapped",
+      "grade": 5
+    },
+    "211": {
+      "name": "Cardboard Boxed",
+      "grade": 3
+    },
+    "212": {
+      "name": "Dream Piped",
+      "grade": 5
+    },
+    "213": {
+      "name": "Miami Element",
+      "grade": 6
+    },
+    "214": {
+      "name": "Neo Tokyo",
+      "grade": 4
+    },
+    "215": {
+      "name": "Geometrical Teams",
+      "grade": 3
+    },
+    "217": {
+      "name": "Bomber Soul",
+      "grade": 3
+    },
+    "218": {
+      "name": "Uranium",
+      "grade": 4
+    },
+    "21": {
+      "name": "Country Crusher",
+      "grade": 0
+    },
+    "220": {
+      "name": "Cabin Fevered",
+      "grade": 3
+    },
+    "221": {
+      "name": "Polar Surprise",
+      "grade": 3
+    },
+    "223": {
+      "name": "Hana",
+      "grade": 4
+    },
+    "224": {
+      "name": "Dovetailed",
+      "grade": 3
+    },
+    "225": {
+      "name": "Cosmic Calamity",
+      "grade": 4
+    },
+    "226": {
+      "name": "Hazard Warning",
+      "grade": 3
+    },
+    "228": {
+      "name": "Mosaic",
+      "grade": 5
+    },
+    "22": {
+      "name": "Plaid Potshotter",
+      "grade": 0
+    },
+    "230": {
+      "name": "Jazzy",
+      "grade": 5
+    },
+    "232": {
+      "name": "Alien Tech",
+      "grade": 3
+    },
+    "234": {
+      "name": "Damascus and Mahogany",
+      "grade": 3
+    },
+    "235": {
+      "name": "Skull Study",
+      "grade": 4
+    },
+    "236": {
+      "name": "Haunted Ghosts",
+      "grade": 3
+    },
+    "237": {
+      "name": "Spectral Shimmered",
+      "grade": 4
+    },
+    "238": {
+      "name": "Spirit of Halloween",
+      "grade": 3
+    },
+    "239": {
+      "name": "Horror Holiday",
+      "grade": 3
+    },
+    "23": {
+      "name": "Shot in the Dark",
+      "grade": 0
+    },
+    "240": {
+      "name": "Totally Boned",
+      "grade": 3
+    },
+    "241": {
+      "name": "Electroshocked",
+      "grade": 6
+    },
+    "242": {
+      "name": "Ghost Town",
+      "grade": 5
+    },
+    "243": {
+      "name": "Tumor Toasted",
+      "grade": 5
+    },
+    "244": {
+      "name": "Calavera Canvas",
+      "grade": 4
+    },
+    "245": {
+      "name": "Snow Covered",
+      "grade": 4
+    },
+    "246": {
+      "name": "Frost Ornamented",
+      "grade": 4
+    },
+    "247": {
+      "name": "Smissmas Village",
+      "grade": 5
+    },
+    "248": {
+      "name": "Igloo",
+      "grade": 3
+    },
+    "249": {
+      "name": "Seriously Snowed",
+      "grade": 3
+    },
+    "24": {
+      "name": "Blasted Bombardier",
+      "grade": 0
+    },
+    "250": {
+      "name": "Smissmas Camo",
+      "grade": 5
+    },
+    "251": {
+      "name": "Sleighin' Style",
+      "grade": 4
+    },
+    "252": {
+      "name": "Alpine",
+      "grade": 3
+    },
+    "253": {
+      "name": "Gift Wrapped",
+      "grade": 3
+    },
+    "254": {
+      "name": "Winterland Wrapped",
+      "grade": 6
+    },
+    "255": {
+      "name": "Helldriver",
+      "grade": 5
+    },
+    "256": {
+      "name": "Organ-ically Hellraised",
+      "grade": 3
+    },
+    "257": {
+      "name": "Spectrum Splattered",
+      "grade": 6
+    },
+    "258": {
+      "name": "Candy Coated",
+      "grade": 3
+    },
+    "259": {
+      "name": "Pumpkin Pied",
+      "grade": 5
+    },
+    "25": {
+      "name": "Reclaimed Reanimator",
+      "grade": 0
+    },
+    "260": {
+      "name": "Sweet Toothed",
+      "grade": 4
+    },
+    "261": {
+      "name": "Crawlspace Critters",
+      "grade": 4
+    },
+    "262": {
+      "name": "Portal Plastered",
+      "grade": 3
+    },
+    "263": {
+      "name": "Death Deluxe",
+      "grade": 3
+    },
+    "264": {
+      "name": "Raving Dead",
+      "grade": 4
+    },
+    "265": {
+      "name": "Eyestalker",
+      "grade": 3
+    },
+    "266": {
+      "name": "Spider's Cluster",
+      "grade": 4
+    },
+    "267": {
+      "name": "Gourdy Green",
+      "grade": 3
+    },
+    "268": {
+      "name": "Mummified Mimic",
+      "grade": 5
+    },
+    "269": {
+      "name": "Spider Season",
+      "grade": 3
+    },
+    "26": {
+      "name": "Antique Annihilator",
+      "grade": 0
+    },
+    "270": {
+      "name": "Gingerbread Winner",
+      "grade": 3
+    },
+    "271": {
+      "name": "Saccharine Striped",
+      "grade": 5
+    },
+    "272": {
+      "name": "Elfin Enamel",
+      "grade": 4
+    },
+    "273": {
+      "name": "Peppermint Swirl",
+      "grade": 3
+    },
+    "275": {
+      "name": "Snow Globalization",
+      "grade": 3
+    },
+    "276": {
+      "name": "Gifting Mann's Wrapping Paper",
+      "grade": 3
+    },
+    "277": {
+      "name": "Snowflake Swirled",
+      "grade": 3
+    },
+    "278": {
+      "name": "Smissmas Spycrabs",
+      "grade": 4
+    },
+    "279": {
+      "name": "Frozen Aurora",
+      "grade": 4
+    },
+    "27": {
+      "name": "Old Country",
+      "grade": 0
+    },
+    "280": {
+      "name": "Starlight Serenity",
+      "grade": 6
+    },
+    "281": {
+      "name": "Frosty Delivery",
+      "grade": 5
+    },
+    "282": {
+      "name": "Glacial Glazed",
+      "grade": 3
+    },
+    "283": {
+      "name": "Cookie Fortress",
+      "grade": 4
+    },
+    "284": {
+      "name": "Sarsaparilla Sprayed",
+      "grade": 3
+    },
+    "285": {
+      "name": "Swashbuckled",
+      "grade": 4
+    },
+    "286": {
+      "name": "Skull Cracked",
+      "grade": 3
+    },
+    "287": {
+      "name": "Misfortunate",
+      "grade": 6
+    },
+    "289": {
+      "name": "Neon-ween",
+      "grade": 4
+    },
+    "28": {
+      "name": "American Pastoral",
+      "grade": 0
+    },
+    "290": {
+      "name": "Simple Spirits",
+      "grade": 3
+    },
+    "291": {
+      "name": "Broken Bones",
+      "grade": 5
+    },
+    "292": {
+      "name": "Potent Poison",
+      "grade": 3
+    },
+    "293": {
+      "name": "Searing Souls",
+      "grade": 3
+    },
+    "294": {
+      "name": "Party Phantoms",
+      "grade": 5
+    },
+    "295": {
+      "name": "Polter-Guised",
+      "grade": 4
+    },
+    "296": {
+      "name": "Kiln and Conquer",
+      "grade": 3
+    },
+    "297": {
+      "name": "Necromanced",
+      "grade": 4
+    },
+    "29": {
+      "name": "Backcountry Blaster",
+      "grade": 0
+    },
+    "2": {
+      "name": "Wrapped Reviver",
+      "grade": 0
+    },
+    "300": {
+      "name": "Yeti Coated",
+      "grade": 5
+    },
+    "301": {
+      "name": "Park Pigmented",
+      "grade": 6
+    },
+    "302": {
+      "name": "Mannana Peeled",
+      "grade": 3
+    },
+    "303": {
+      "name": "Macaw Masked",
+      "grade": 4
+    },
+    "304": {
+      "name": "Sax Waxed",
+      "grade": 5
+    },
+    "305": {
+      "name": "Anodized Aloha",
+      "grade": 3
+    },
+    "306": {
+      "name": "Bamboo Brushed",
+      "grade": 3
+    },
+    "307": {
+      "name": "Tiger Buffed",
+      "grade": 3
+    },
+    "308": {
+      "name": "Croc Dusted",
+      "grade": 4
+    },
+    "309": {
+      "name": "Piña Polished",
+      "grade": 4
+    },
+    "30": {
+      "name": "Bovine Blazemaker",
+      "grade": 0
+    },
+    "310": {
+      "name": "Leopard Printed",
+      "grade": 3
+    },
+    "31": {
+      "name": "War Room",
+      "grade": 0
+    },
+    "32": {
+      "name": "Treadplate Tormenter",
+      "grade": 0
+    },
+    "33": {
+      "name": "Bogtrotter",
+      "grade": 0
+    },
+    "34": {
+      "name": "Earth, Sky and Fire",
+      "grade": 0
+    },
+    "35": {
+      "name": "Hickory Hole-Puncher",
+      "grade": 0
+    },
+    "36": {
+      "name": "Spruce Deuce",
+      "grade": 0
+    },
+    "37": {
+      "name": "Team Sprayer",
+      "grade": 0
+    },
+    "38": {
+      "name": "Rooftop Wrangler",
+      "grade": 0
+    },
+    "390": {
+      "name": "Dragon Slayer",
+      "grade": 6
+    },
+    "391": {
+      "name": "Smissmas Sweater",
+      "grade": 4
+    },
+    "39": {
+      "name": "Civil Servant",
+      "grade": 0
+    },
+    "3": {
+      "name": "Psychedelic Slugger",
+      "grade": 0
+    },
+    "400": {
+      "name": "Ghoul Blaster",
+      "grade": 5
+    },
+    "401": {
+      "name": "Cream Corned",
+      "grade": 3
+    },
+    "402": {
+      "name": "Sunriser",
+      "grade": 3
+    },
+    "403": {
+      "name": "Sacred Slayer",
+      "grade": 6
+    },
+    "404": {
+      "name": "Metalized Soul",
+      "grade": 4
+    },
+    "405": {
+      "name": "Bonzo Gnawed",
+      "grade": 5
+    },
+    "406": {
+      "name": "Health and Hell",
+      "grade": 3
+    },
+    "407": {
+      "name": "Health and Hell (Green)",
+      "grade": 3
+    },
+    "408": {
+      "name": "Hypergon",
+      "grade": 3
+    },
+    "409": {
+      "name": "Pumpkin Plastered",
+      "grade": 4
+    },
+    "40": {
+      "name": "Citizen Pain",
+      "grade": 0
+    },
+    "410": {
+      "name": "Chilly Autumn",
+      "grade": 4
+    },
+    "411": {
+      "name": "Steel Brushed",
+      "grade": 4
+    },
+    "412": {
+      "name": "Secretly Serviced",
+      "grade": 3
+    },
+    "413": {
+      "name": "Sky Stallion",
+      "grade": 6
+    },
+    "414": {
+      "name": "Bomb Carrier",
+      "grade": 3
+    },
+    "415": {
+      "name": "Business Class",
+      "grade": 5
+    },
+    "416": {
+      "name": "Deadly Dragon",
+      "grade": 5
+    },
+    "417": {
+      "name": "Team Serviced",
+      "grade": 3
+    },
+    "418": {
+      "name": "Warborn",
+      "grade": 4
+    },
+    "419": {
+      "name": "Pacific Peacemaker",
+      "grade": 3
+    },
+    "41": {
+      "name": "Local Hero",
+      "grade": 0
+    },
+    "420": {
+      "name": "Mechanized Monster",
+      "grade": 4
+    },
+    "421": {
+      "name": "Stardust",
+      "grade": 5
+    },
+    "422": {
+      "name": "Team Detail",
+      "grade": 3
+    },
+    "423": {
+      "name": "Gobi Glazed",
+      "grade": 3
+    },
+    "424": {
+      "name": "Sleek Greek",
+      "grade": 3
+    },
+    "425": {
+      "name": "Graphite Gripped",
+      "grade": 4
+    },
+    "426": {
+      "name": "Stealth Specialist",
+      "grade": 4
+    },
+    "427": {
+      "name": "Piranha Mania",
+      "grade": 4
+    },
+    "428": {
+      "name": "Team Charged",
+      "grade": 3
+    },
+    "429": {
+      "name": "Brawler's Iron",
+      "grade": 3
+    },
+    "42": {
+      "name": "Mayor",
+      "grade": 0
+    },
+    "430": {
+      "name": "Necropolish",
+      "grade": 5
+    },
+    "431": {
+      "name": "Blackout",
+      "grade": 3
+    },
+    "432": {
+      "name": "Broken Record",
+      "grade": 6
+    },
+    "433": {
+      "name": "Sandwich Diner",
+      "grade": 4
+    },
+    "434": {
+      "name": "Beachy Boy",
+      "grade": 3
+    },
+    "435": {
+      "name": "Army Guns",
+      "grade": 3
+    },
+    "436": {
+      "name": "Taxi Cabbed",
+      "grade": 5
+    },
+    "437": {
+      "name": "Ocean Mapped",
+      "grade": 3
+    },
+    "438": {
+      "name": "Krak-coated",
+      "grade": 4
+    },
+    "439": {
+      "name": "Team Union",
+      "grade": 6
+    },
+    "43": {
+      "name": "Smalltown Bringdown",
+      "grade": 0
+    },
+    "440": {
+      "name": "Sideshow",
+      "grade": 3
+    },
+    "441": {
+      "name": "Storage War",
+      "grade": 5
+    },
+    "442": {
+      "name": "Die'n Dasher",
+      "grade": 4
+    },
+    "44": {
+      "name": "Civic Duty",
+      "grade": 0
+    },
+    "45": {
+      "name": "Liquid Asset",
+      "grade": 0
+    },
+    "46": {
+      "name": "Black Dahlia",
+      "grade": 0
+    },
+    "47": {
+      "name": "Lightning Rod",
+      "grade": 0
+    },
+    "48": {
+      "name": "Pink Elephant",
+      "grade": 0
+    },
+    "49": {
+      "name": "Flash Fryer",
+      "grade": 0
+    },
+    "4": {
+      "name": "Carpet Bomber",
+      "grade": 0
+    },
+    "50": {
+      "name": "Spark of Life",
+      "grade": 0
+    },
+    "51": {
+      "name": "Dead Reckoner",
+      "grade": 0
+    },
+    "52": {
+      "name": "Shell Shocker",
+      "grade": 0
+    },
+    "53": {
+      "name": "Current Event",
+      "grade": 0
+    },
+    "54": {
+      "name": "Turbine Torcher",
+      "grade": 0
+    },
+    "55": {
+      "name": "Brick House",
+      "grade": 0
+    },
+    "56": {
+      "name": "Sandstone Special",
+      "grade": 0
+    },
+    "57": {
+      "name": "Aqua Marine",
+      "grade": 0
+    },
+    "58": {
+      "name": "Low Profile",
+      "grade": 0
+    },
+    "59": {
+      "name": "Thunderbolt",
+      "grade": 0
+    },
+    "5": {
+      "name": "Masked Mender",
+      "grade": 0
+    },
+    "60": {
+      "name": "Autumn",
+      "grade": 0
+    },
+    "61": {
+      "name": "Nutcracker",
+      "grade": 0
+    },
+    "62": {
+      "name": "Pumpkin Patch",
+      "grade": 0
+    },
+    "63": {
+      "name": "Macabre Web",
+      "grade": 0
+    },
+    "64": {
+      "name": "Boneyard",
+      "grade": 0
+    },
+    "65": {
+      "name": "Wildwood",
+      "grade": 0
+    },
+    "66": {
+      "name": "Balloonicorn",
+      "grade": 0
+    },
+    "67": {
+      "name": "Rainbow",
+      "grade": 0
+    },
+    "68": {
+      "name": "Sweet Dreams",
+      "grade": 0
+    },
+    "69": {
+      "name": "Blue Mew",
+      "grade": 0
+    },
+    "6": {
+      "name": "Woodland Warrior",
+      "grade": 0
+    },
+    "70": {
+      "name": "Brain Candy",
+      "grade": 0
+    },
+    "71": {
+      "name": "Stabbed to Hell",
+      "grade": 0
+    },
+    "72": {
+      "name": "Flower Power",
+      "grade": 0
+    },
+    "73": {
+      "name": "Mister Cuddles",
+      "grade": 0
+    },
+    "74": {
+      "name": "Shot to Hell",
+      "grade": 0
+    },
+    "75": {
+      "name": "Torqued to Hell",
+      "grade": 0
+    },
+    "76": {
+      "name": "Coffin Nail",
+      "grade": 0
+    },
+    "77": {
+      "name": "Top Shelf",
+      "grade": 0
+    },
+    "78": {
+      "name": "Dressed to Kill",
+      "grade": 0
+    },
+    "79": {
+      "name": "High Roller's",
+      "grade": 0
+    },
+    "7": {
+      "name": "Purple Range",
+      "grade": 0
+    },
+    "80": {
+      "name": "Warhawk",
+      "grade": 0
+    },
+    "81": {
+      "name": "Blitzkrieg",
+      "grade": 0
+    },
+    "82": {
+      "name": "Airwolf",
+      "grade": 0
+    },
+    "83": {
+      "name": "Corsair",
+      "grade": 0
+    },
+    "84": {
+      "name": "Butcher Bird",
+      "grade": 0
+    },
+    "85": {
+      "name": "Killer Bee",
+      "grade": 0
+    },
+    "86": {
+      "name": "Red Bear",
+      "grade": 0
+    },
+    "8": {
+      "name": "Sudden Flurry",
+      "grade": 0
+    },
+    "91": {
+      "name": "Rainbow",
+      "grade": 0
+    },
+    "92": {
+      "name": "Killer Bee",
+      "grade": 0
+    },
+    "93": {
+      "name": "Coffin Nail",
+      "grade": 0
+    },
+    "97": {
+      "name": "97: wearblend",
+      "grade": 0
+    },
+    "98": {
+      "name": "98: dirt/blood/scratches",
+      "grade": 0
+    },
+    "99": {
+      "name": "99: ao/dirt/blood/scratches",
+      "grade": 0
+    },
+    "9": {
+      "name": "Forest Fire",
+      "grade": 0
+    }
+  }
+}
