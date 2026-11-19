@@ -4,9 +4,9 @@ Item Manager is a Windows application for viewing and organizing a Team Fortress
 
 ## Install
 
-Download the Windows ZIP from this repository's Releases page and extract it to its own writable folder. Run `item_manager.exe` with Steam running and Team Fortress 2 installed. The application downloads item schema and image data on first use and keeps generated previews in its own folders. The release includes the item metadata needed for item display, but does not include a previously downloaded schema or cache. Python is not required to use the application.
+Download the Windows ZIP from this repository's Releases page and extract it to its own writable folder. Run `item_manager.exe` with Steam running and Team Fortress 2 installed. The application downloads item schema and image data on first use and keeps generated previews in its own folders. The release includes the item metadata needed for item display, but does not include a previously downloaded schema or cache.
 
-War Paint and skin previews use an integrated native renderer. The renderer uses up to three workers and 512-pixel textures. The app waits for required previews to be generated while loading; it does not continue generating them in the background.
+War Paint and skin previews use an integrated native renderer. The renderer uses up to three workers and 512-pixel textures. The app waits for required previews to be generated while loading.
 
 ## Updates
 
