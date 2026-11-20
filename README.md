@@ -22,7 +22,7 @@ On both platforms, the app waits for required previews to be generated while loa
 
 ## Updates
 
-On Windows, the application checks the latest published release of this repository. When a newer release provides the expected executable asset, the user can choose to download and install it. The app verifies the downloaded executable against the SHA-256 digest supplied by GitHub. The current updater replaces **only `item_manager.exe`**; if a release changes supporting files, download and extract the full release ZIP as described in that release's notes. Linux updates are installed by downloading the new archive. Your existing downloaded schema and caches are not included in the update.
+Updates are installed by downloading the new archive. Your existing downloaded schema and caches are not included in the update.
 
 ## Build from source
 
