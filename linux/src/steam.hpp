@@ -1,0 +1,92 @@
+#pragma once
+
+#include <stdexcept>
+#include <map>
+#include <set>
+#include <chrono>
+#include "steam/ISteamRemoteStorage004.h"
+#include "steam/ISteamUtils005.h"
+#include "steam/ISteamFriends009.h"
+#include "steam/SteamclientAPI.h"
+#include "protobuf/base_gcmessages.pb.h"
+#include "gc_protobuf_message.hpp"
+
+// Protobuf flag.
+const unsigned int PROTOBUF_MESSAGE_FLAG = 0x80000000;
+
+// Log messages to file.
+// #define LOG_STEAM_MESSAGES
+
+class Steam
+{
+
+public:
+
+	Steam( void );
+	virtual ~Steam( void );
+
+	// Initializing and closing.
+	virtual bool load_interfaces( void );
+	virtual void close_interfaces( void );
+
+	// Callback and message handling.
+	bool get_callback( CallbackMsg_t* callback );
+	void release_callback( void ) const;
+	bool has_message( uint32* size ) const;
+	bool get_message( unsigned int* id, void* buffer, uint32 size, unsigned int* real_size );
+	bool send_message( unsigned int id, const void* buffer, uint32 size ) const;
+	bool send_protobuf_message( const GCProtobufMessage* message ) const;
+
+	// Steam getters.
+	uint64 get_steam_id( void ) const;
+	void request_decal(uint64 handle);
+	void poll_decals();
+	std::string get_gifter_name(uint32 account);
+
+private:
+
+	uint64 get_target_id( void ) const;
+
+protected:
+
+#if defined(LOG_STEAM_MESSAGES)
+	// File for dumping data.
+	FILE* log_;
+	
+	// Dump raw byte information to file.
+	void log_bytes( const void *buffer, unsigned int size ) const;
+#endif
+
+private:
+
+	// Steam handles.
+	HSteamUser user_;
+	HSteamPipe pipe_;
+
+	// Steam interfaces.
+	ISteamClient008* steam_client_;
+	ISteamUser012* steam_user_;
+	ISteamGameCoordinator001* game_coordinator_;
+	ISteamRemoteStorage004* remote_storage_;
+	ISteamUtils005* steam_utils_;
+	ISteamFriends009* steam_friends_;
+	std::set<uint32> requested_gifters_;
+	std::map<uint64,SteamAPICall_t> decal_pending_;
+	std::set<uint64> decal_requested_;
+
+	// For function loading.
+	HMODULE client_dll_;
+
+#if !defined(_WIN32)
+	bool load_linux_interfaces();
+	void send_linux_hello_if_due();
+	void* api_dll_ = nullptr;
+	void (*api_shutdown_)() = nullptr;
+	bool api_initialized_ = false;
+	bool coordinator_welcomed_ = false;
+	mutable bool synthetic_callback_ = false;
+	std::chrono::steady_clock::time_point next_hello_{};
+	std::set<int> decal_processes_;
+#endif
+
+};

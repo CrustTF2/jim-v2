@@ -1,0 +1,44 @@
+[
+  {
+    "name": "protobuf",
+    "repository": "protocolbuffers/protobuf",
+    "tag": "v3.5.1",
+    "url": "https://codeload.github.com/protocolbuffers/protobuf/tar.gz/refs/tags/v3.5.1",
+    "sha256": "826425182ee43990731217b917c5c3ea7190cfda141af4869e6d4ad9085a740f"
+  },
+  {
+    "name": "jsoncpp",
+    "repository": "open-source-parsers/jsoncpp",
+    "tag": "1.8.4",
+    "url": "https://codeload.github.com/open-source-parsers/jsoncpp/tar.gz/refs/tags/1.8.4",
+    "sha256": "c49deac9e0933bcb7044f08516861a2d560988540b23de2ac1ad443b219afdb6"
+  },
+  {
+    "name": "zlib",
+    "repository": "madler/zlib",
+    "tag": "v1.3.1",
+    "url": "https://codeload.github.com/madler/zlib/tar.gz/refs/tags/v1.3.1",
+    "sha256": "17e88863f3600672ab49182f217281b6fc4d3c762bde361935e436a95214d05c"
+  },
+  {
+    "name": "libpng",
+    "repository": "pnggroup/libpng",
+    "tag": "v1.6.43",
+    "url": "https://codeload.github.com/pnggroup/libpng/tar.gz/refs/tags/v1.6.43",
+    "sha256": "fecc95b46cf05e8e3fc8a414750e0ba5aad00d89e9fdf175e94ff041caf1a03a"
+  },
+  {
+    "name": "freetype",
+    "repository": "freetype/freetype",
+    "tag": "VER-2-13-2",
+    "url": "https://codeload.github.com/freetype/freetype/tar.gz/refs/tags/VER-2-13-2",
+    "sha256": "427201f5d5151670d05c1f5b45bef5dda1f2e7dd971ef54f0feaaa7ffd2ab90c"
+  },
+  {
+    "name": "curl",
+    "repository": "curl/curl",
+    "tag": "curl-8_7_1",
+    "url": "https://codeload.github.com/curl/curl/tar.gz/refs/tags/curl-8_7_1",
+    "sha256": "0e46c856f517602c347bb5fe5b73174f8ee798bc87f1a97235c95761f75fcc28"
+  }
+]

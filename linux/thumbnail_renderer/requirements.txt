@@ -1,0 +1,8 @@
+construct==2.10.70
+glcontext==2.5.0
+moderngl==5.10.0
+numpy==1.24.4; python_version < '3.9'
+numpy==1.26.4; python_version >= '3.9' and python_version < '3.13'
+Pillow==10.4.0
+protobuf==3.20.3
+valvemdl==0.0.2
