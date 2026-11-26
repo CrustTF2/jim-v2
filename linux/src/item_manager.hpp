@@ -13,7 +13,6 @@
 #include "item_manager_view_listener.hpp"
 #include "item_schema.hpp"
 #include "steam_inventory_manager.hpp"
-#include "updater.hpp"
 #include "frame_limiter.hpp"
 #include <atomic>
 
@@ -51,8 +50,6 @@ public:
 	void apply_thumbnail_cache( void );
 	void update_decals( void );
 	bool running( void );
-	bool pending_update( void );
-	bool updating( void );
 	bool exiting( void );
 
     // View listener functions.
@@ -90,8 +87,6 @@ private:
 	// Application interfaces.
 	HttpResourceLoader* site_loader_;
     DefinitionLoader* definition_loader_;
-	Updater* updater_;
-	std::thread* update_thread_;
 #if defined(_WIN32)
 	HANDLE thumbnail_thread_;
 #else
@@ -100,10 +95,6 @@ private:
 	std::atomic<bool> thumbnail_cancelled_;
 	bool thumbnail_refresh_pending_;
 	bool inventory_refreshing_;
-
-	// We can't just check think function since exiting is equal
-	// to pending update in the release build.
-	bool is_pending_update_;
 
 	// Framerate limiting parameters.
 	FrameLimiter frame_limiter_;

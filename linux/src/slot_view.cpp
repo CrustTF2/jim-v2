@@ -1,8 +1,5 @@
 #include "slot_view.hpp"
 
-// Slot stroke attributes.
-const unsigned int SLOT_STROKE_WIDTH = 3;
-
 // Slot colour attributes.
 const JUI::Colour SLOT_NORMAL_COLOUR( 0x3C352E );
 const JUI::Colour SLOT_SELECTED_COLOUR( 0x5A5048 ); 
@@ -97,6 +94,11 @@ void SlotView::update( const Slot* slot )
 /*
  * Update item specific slot decoration.
  */
+void SlotView::set_hovered(bool hovered) const
+{
+	if (item_) item_->set_hovered(hovered);
+}
+
 void SlotView::update_item( const Item* item )
 {
 	const JUI::Texture* texture;
@@ -108,7 +110,7 @@ void SlotView::update_item( const Item* item )
 	if (item != nullptr) {
 		texture = item->get_texture();
 		stroke_colour = item->get_border_colour();
-		stroke_width = SLOT_STROKE_WIDTH;
+		stroke_width = SlotGeometry::stroke_width;
 
 		// Slot colour based on item selection.
 		if (item->is_selected()) {

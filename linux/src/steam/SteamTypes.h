@@ -60,7 +60,11 @@
 	#define S_API extern "C"
 
 	#ifndef __cdecl
-		#define __cdecl __attribute__((__cdecl__))
+		#if defined(__i386__)
+			#define __cdecl __attribute__((__cdecl__))
+		#else
+			#define __cdecl
+		#endif
 	#endif
 
 	// mac doesn't have errno_t ??

@@ -556,6 +556,7 @@ NotificationQueue* ItemManagerView::get_notification_queue( void )
  */
 bool ItemManagerView::on_enter_frame( void )
 {
+    if (hovered_slot_ && popups_->has_popup()) set_hovered_slot(nullptr);
 	// Update item display opacity.
 	if (!update_item_display()) {
 		return false;
@@ -604,6 +605,7 @@ bool ItemManagerView::update_page_display( void )
  */
 bool ItemManagerView::next_page( void )
 {
+    set_hovered_slot(nullptr);
 	unsigned int active = inventory_view_->get_active_page();
 	unsigned int new_active;
 	if (active == inventory_view_->get_page_count() - 1) {
@@ -624,6 +626,7 @@ bool ItemManagerView::next_page( void )
  */ 
 bool ItemManagerView::previous_page( void )
 {
+    set_hovered_slot(nullptr);
 	unsigned int active = inventory_view_->get_active_page();
 	unsigned int new_active;
 	if (active == 0) {
@@ -644,6 +647,7 @@ bool ItemManagerView::previous_page( void )
  */
 void ItemManagerView::excluded_next_page( void )
 {
+    set_hovered_slot(nullptr);
 	unsigned int active = excluded_view_->get_active_page();
 	unsigned int new_active = active + 1;
 	if (new_active != excluded_view_->get_page_count()) {
@@ -657,6 +661,7 @@ void ItemManagerView::excluded_next_page( void )
  */ 
 void ItemManagerView::excluded_previous_page( void )
 {
+    set_hovered_slot(nullptr);
 	unsigned int active = excluded_view_->get_active_page();
 	if (active != 0) {
 		unsigned int new_active = active - 1;
@@ -700,8 +705,41 @@ void ItemManagerView::draw(JUI::Graphics2D* graphics)
 /*
  * Handle mouse movement event.
  */
+void ItemManagerView::set_hovered_slot(const SlotView* slot)
+{
+    if (hovered_slot_ != slot && hovered_slot_) hovered_slot_->set_hovered(false);
+    hovered_slot_ = slot;
+    if (hovered_slot_) hovered_slot_->set_hovered(true);
+}
+
+void ItemManagerView::update_hovered_slot(const JUI::Mouse* mouse)
+{
+    const SlotView* hovered = nullptr;
+    bool mouse_in_window = true;
+#if !defined(_WIN32)
+    mouse_in_window = SDL_GetMouseFocus() == mouse->get_window_handle();
+#endif
+    if (is_fully_loaded_ && mouse_in_window && !is_mouse_down_ && !popups_->has_popup()) {
+        SlotBookView* views[] = {inventory_view_, excluded_view_};
+        SlotArray* arrays[] = {inventory_->get_inventory_slots(), inventory_->get_excluded_slots()};
+        for (int v = 0; v < 2 && !hovered; ++v) {
+            const unsigned int first = views[v]->get_active_page() * views[v]->get_grid_size();
+            const unsigned int end = (std::min)(first + views[v]->get_grid_size(), arrays[v]->get_size());
+            for (unsigned int i = first; i < end; ++i) {
+                const Slot* slot = arrays[v]->get_slot(i);
+                const SlotView* view = views[v]->get_slot_view(i);
+                if (slot && slot->has_item() && slot->is_enabled() && mouse->is_touching(view)) {
+                    hovered = view; break;
+                }
+            }
+        }
+    }
+    set_hovered_slot(hovered);
+}
+
 JUI::IOResult ItemManagerView::on_mouse_moved( JUI::Mouse* mouse )
 {
+    update_hovered_slot(mouse);
     // Pass to popup handler.
     JUI::IOResult result = popups_->on_mouse_moved( mouse );
     if (result != JUI::IO_RESULT_UNHANDLED) {
@@ -797,6 +835,7 @@ JUI::IOResult ItemManagerView::on_mouse_moved( JUI::Mouse* mouse )
  */
 JUI::IOResult ItemManagerView::on_mouse_clicked( JUI::Mouse* mouse )
 {
+    set_hovered_slot(nullptr);
 	// Set input state and reset dragging parameters.
 	is_mouse_down_ = true;
 	clicked_view_ = nullptr;
@@ -857,6 +896,7 @@ JUI::IOResult ItemManagerView::on_mouse_clicked( JUI::Mouse* mouse )
 
 void ItemManagerView::on_focus_lost()
 {
+    set_hovered_slot(nullptr);
     is_shift_down_=false;
     is_multiselect_pressed_=false;
     if (box_pending_) {
@@ -873,6 +913,7 @@ JUI::IOResult ItemManagerView::on_mouse_released( JUI::Mouse* mouse )
 {
 	// Update I/O state.
 	is_mouse_down_ = false;
+    update_hovered_slot(mouse);
 
     // Pass to popup handler.
 	JUI::IOResult result = popups_->on_mouse_released( mouse );

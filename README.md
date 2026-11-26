@@ -28,6 +28,8 @@ Updates are installed by downloading the new archive. Your existing downloaded s
 
 The platform-specific sources are in `windows/` and `linux/`.
 
+Before building either version, download a v2.0.2 release archive and copy its `particles` folder to the repository root, renaming it `particle-assets`. Alternatively, prepare that folder from the original `.webp` files using `tools/prepare_particles.py` and Python with Pillow installed.
+
 **Windows:** Requirements are CMake 3.20 or newer, Visual Studio with the C++ desktop workload and the Windows SDK, PowerShell, and internet access to retrieve pinned third-party sources. The target is 32-bit Windows.
 
 ```powershell

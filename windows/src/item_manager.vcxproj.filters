@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+ï»¿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="headers">
@@ -140,7 +140,7 @@
     <ClCompile Include="kill_eater_ranks.cpp">
       <Filter>source\items</Filter>
     </ClCompile>
-    <ClCompile Include="updater.cpp">
+    <ClCompile Include="release_checker.cpp">
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="dragged_slot_view.cpp">
@@ -301,7 +301,7 @@
     <ClInclude Include="inventory_action_interface.hpp">
       <Filter>headers\items</Filter>
     </ClInclude>
-    <ClInclude Include="updater.hpp">
+    <ClInclude Include="release_checker.hpp">
       <Filter>headers\items</Filter>
     </ClInclude>
     <ClInclude Include="button_listener.hpp">

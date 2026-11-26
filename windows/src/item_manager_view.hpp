@@ -101,6 +101,8 @@ private:
 
     // UI updating helpers.
     bool update_item_display( void );
+    void set_hovered_slot(const SlotView* slot);
+    void update_hovered_slot(const JUI::Mouse* mouse);
 
 private:
 
@@ -142,6 +144,7 @@ private:
 	// Item dragging members.
     SlotStackView* selected_view_;
 	const SlotView* clicked_view_;
+	const SlotView* hovered_slot_ = nullptr;
 	bool was_clicked_selected_;
 	bool was_dragging_;
 	bool is_right_pressed_;

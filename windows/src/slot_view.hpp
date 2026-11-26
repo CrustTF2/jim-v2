@@ -10,6 +10,7 @@
 #include "item_decorator.hpp"
 #include "rounded_rectangle.hpp"
 #include "slot.hpp"
+#include "slot_geometry.hpp"
 
 // Slot view constants.
 static const float ENABLED_ALPHA  = 1.0f;
@@ -22,13 +23,14 @@ class SlotView: public JUI::ConstrainedContainer
 public:
 
 	// Slot display attributes.
-	static const unsigned int SLOT_RADIUS    = 7;
+	static const unsigned int SLOT_RADIUS = SlotGeometry::corner_radius;
 
 	// Initialization and construction.
 	SlotView( void );
     bool initialize( void );
 	void update( const Slot* slot );
 	void update_item( const Item* item );
+	void set_hovered(bool hovered) const;
 
 private:
 

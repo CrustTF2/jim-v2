@@ -32,6 +32,7 @@ set(APP_SOURCES
   "src/inventory.cpp"
   "src/item.cpp"
   "src/item_presentation.cpp"
+  "src/particle_animation.cpp"
   "src/item_display.cpp"
   "src/item_definition.cpp"
   "src/item_manager.cpp"
@@ -47,7 +48,7 @@ set(APP_SOURCES
   "src/serialized_buffer.cpp"
   "src/slot.cpp"
   "src/steam.cpp"
-  "src/updater.cpp"
+  "src/release_checker.cpp"
 )
 set(JUI_SOURCES
   "src/jui/src/application/application.cpp"

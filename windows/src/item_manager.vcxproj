@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+ï»¿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -153,7 +153,7 @@
     <ClCompile Include="serialized_buffer.cpp" />
     <ClCompile Include="slot.cpp" />
     <ClCompile Include="steam.cpp" />
-    <ClCompile Include="updater.cpp" />
+    <ClCompile Include="release_checker.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="attribute_definition.hpp" />
@@ -215,7 +215,7 @@
     <ClInclude Include="serialized_buffer.hpp" />
     <ClInclude Include="slot_view.hpp" />
     <ClInclude Include="steam.hpp" />
-    <ClInclude Include="updater.hpp" />
+    <ClInclude Include="release_checker.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="image1.bin" />

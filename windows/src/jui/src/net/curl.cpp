@@ -71,7 +71,7 @@ namespace JUI
 			stack->log( "Failed to initialize Curl." );
 			return InitializeFailure;
 		}
-		curl_easy_setopt(curl_, CURLOPT_USERAGENT, "ItemManager/2.0.0");
+		curl_easy_setopt(curl_, CURLOPT_USERAGENT, "ItemManager/2.0.2");
 		curl_easy_setopt(curl_, CURLOPT_FOLLOWLOCATION, 1L);
 		curl_easy_setopt(curl_, CURLOPT_MAXREDIRS, 5L);
 		curl_easy_setopt(curl_, CURLOPT_REDIR_PROTOCOLS_STR, "https");

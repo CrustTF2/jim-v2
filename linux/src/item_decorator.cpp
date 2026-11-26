@@ -1,10 +1,26 @@
 #include "item_decorator.hpp"
 #include "spell_colours.hpp"
+#include "particle_animation.hpp"
+#include "slot_geometry.hpp"
+#include <fstream>
+
+namespace {
+ParticleAnimation particle_animation;
+std::string particle_filename(const std::string& name) {
+    std::string result;
+    for (unsigned char c : name) {
+        if (c >= 'A' && c <= 'Z') c = static_cast<unsigned char>(c - 'A' + 'a');
+        if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) result.push_back(static_cast<char>(c));
+    }
+    return result;
+}
+}
 
 // Component parameters.
 const unsigned int DECORATOR_WIDTH = 80;
 const unsigned int DECORATOR_HEIGHT = 60;
 const unsigned int ITEM_SIZE = 60;
+const int PARTICLE_SIZE = 90;
 const int BADGE_SIZE = 23;
 const int BADGE_PADDING = 3;
 const int BADGE_SPACING = 2;
@@ -60,7 +76,7 @@ const JUI::Colour TEAM_SPIRIT_SECOND( 0x5885A2, 1.0f );
  * No item to start with.
  */
 ItemDecorator::ItemDecorator( void )
-	: item_( nullptr )
+	: item_( nullptr ), last_draw_(std::chrono::steady_clock::now())
 {
 	set_size( DECORATOR_WIDTH, DECORATOR_HEIGHT );
 }
@@ -163,6 +179,7 @@ bool ItemDecorator::precache( JUI::Graphics2D* graphics )
  */
 void ItemDecorator::release( void )
 {
+	particle_animation.clear();
 	JUTIL::BaseAllocator::safe_destroy( &crate_text_ );
 	JUTIL::BaseAllocator::safe_destroy( &equipped_text_ );
 }
@@ -172,7 +189,18 @@ void ItemDecorator::release( void )
  */
 void ItemDecorator::set_item( const Item* item )
 {
+	if (item_ == item) return;
 	item_ = item;
+	particle_name_.clear(); particle_still_ = nullptr; particle_checked_ = false;
+	hovered_ = false; item_opacity_ = 1.0f;
+	last_draw_ = std::chrono::steady_clock::now();
+}
+
+void ItemDecorator::set_hovered(bool hovered)
+{
+    if (hovered_ == hovered) return;
+    hovered_ = hovered;
+    if (hovered) hover_started_ = std::chrono::steady_clock::now();
 }
 
 /*
@@ -180,6 +208,29 @@ void ItemDecorator::set_item( const Item* item )
  */
 void ItemDecorator::draw( JUI::Graphics2D* graphics )
 {
+	const auto now = std::chrono::steady_clock::now();
+	float elapsed = std::chrono::duration_cast<std::chrono::duration<float>>(now - last_draw_).count();
+	last_draw_ = now;
+	if (elapsed > 0.1f) elapsed = 0.1f;
+	if (item_ && !particle_checked_) {
+		particle_checked_ = true;
+		for (const auto& effect : item_->get_presentation().particle_effects) {
+			const std::string name = particle_filename(effect);
+			if (name.empty()) continue;
+			const std::string path = "particles/" + name + ".png";
+			std::ifstream file(path, std::ios::binary);
+			if (!file) continue;
+			JUTIL::ConstantString filename(path.c_str());
+			if (graphics->get_texture(&filename, &particle_still_) == JUI::Graphics2D::Success) {
+				particle_name_ = name; break;
+			}
+		}
+	}
+	const float target = hovered_ && particle_still_ ? 0.25f : 1.0f;
+	const float step = elapsed * 3.0f;
+	if (item_opacity_ < target) item_opacity_ = (item_opacity_ + step < target) ? item_opacity_ + step : target;
+	else if (item_opacity_ > target) item_opacity_ = (item_opacity_ - step > target) ? item_opacity_ - step : target;
+
 	// Get coordinates first.
 	graphics->push_matrix();
 	graphics->translate( get_x(), get_y() );
@@ -195,7 +246,7 @@ void ItemDecorator::draw( JUI::Graphics2D* graphics )
 		// Resolve colours first.
 		const Attribute* first = item_->find_attribute( &SET_TINT_FIRST );
 		bool has_first = (first != nullptr);
-		bool has_second;
+		bool has_second = false;
 		JUI::Colour first_colour;
 		JUI::Colour second_colour;
 		if (first != nullptr) {
@@ -218,9 +269,30 @@ void ItemDecorator::draw( JUI::Graphics2D* graphics )
 			}
 		}
 
-		// Draw the item.
+		// The first frame is static until this slot is hovered.
+		if (particle_still_) {
+			const JUI::Texture* background = particle_still_;
+			if (hovered_) {
+				const auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(now - hover_started_).count();
+				if (const JUI::Texture* animation = particle_animation.frame(graphics, particle_name_, static_cast<std::uint64_t>(ms))) background = animation;
+			}
+			graphics->set_colour(&JUI::COLOUR_WHITE);
+			// Keep the effect inside the quality border, including its rounded corners.
+			const int particle_x = (get_width() - PARTICLE_SIZE) / 2;
+			const int particle_y = (get_height() - PARTICLE_SIZE) / 2;
+			const int inset = SlotGeometry::effect_inset;
+			const int clip_x = (std::max)(0, inset - particle_x);
+			const int clip_y = (std::max)(0, inset - particle_y);
+			const int clip_w = (std::min)(PARTICLE_SIZE - clip_x, get_width() - inset - particle_x - clip_x);
+			const int clip_h = (std::min)(PARTICLE_SIZE - clip_y, get_height() - inset - particle_y - clip_y);
+			if (clip_w > 0 && clip_h > 0)
+				graphics->draw_texture_restricted(background, particle_x, particle_y, PARTICLE_SIZE, PARTICLE_SIZE,
+					clip_x, clip_y, clip_w, clip_h);
+		}
+		// Fade only the item image; the badges and labels remain readable.
 		const JUI::Texture* texture = item_->get_texture();
-		graphics->set_colour( &JUI::COLOUR_WHITE );
+		const JUI::Colour item_colour(1.0f, 1.0f, 1.0f, item_opacity_);
+		graphics->set_colour( &item_colour );
 		if (texture != nullptr) {
 			const int available_width = item_->has_thumbnail_texture() ? get_width()-6 : ITEM_SIZE;
 			const int available_height = item_->has_thumbnail_texture() ? get_height() : ITEM_SIZE;
@@ -233,12 +305,14 @@ void ItemDecorator::draw( JUI::Graphics2D* graphics )
 		if (const JUI::Texture* target=item_->get_kit_target_texture()) {
 			const int box=21;
 			const JUI::Viewport fitted=JUI::fit_viewport(target->get_width(),target->get_height(),box,box);
-			graphics->set_colour(&JUI::COLOUR_WHITE);
+			graphics->set_colour(&item_colour);
 			graphics->draw_texture(target,item_x+17+fitted.x,item_y+26+fitted.y,fitted.width,fitted.height);
 		}
 
 		// Draw the spills above if it's a paint can.
 		if (is_paint_can) {
+			first_colour.set_alpha(first_colour.get_alpha() * item_opacity_);
+			if (has_second) second_colour.set_alpha(second_colour.get_alpha() * item_opacity_);
 			if (has_second) {
 				graphics->set_colour( &first_colour );
 				graphics->draw_texture( spill_first_, item_x, item_y, ITEM_SIZE, ITEM_SIZE );

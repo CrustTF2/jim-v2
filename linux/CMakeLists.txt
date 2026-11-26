@@ -18,9 +18,13 @@ add_library(jsoncpp STATIC "${JIM_DEPS_DIR}/jsoncpp/src/lib_json/json_reader.cpp
 target_include_directories(jsoncpp PUBLIC "${JIM_DEPS_DIR}/jsoncpp/include")
 
 find_package(Threads REQUIRED)
+# The renderer calls legacy EXT framebuffer entry points, which are exported
+# by libGL rather than necessarily by the GLVND libOpenGL library.
+set(OpenGL_GL_PREFERENCE LEGACY)
 find_package(OpenGL REQUIRED)
 find_package(Freetype REQUIRED)
 find_package(PNG REQUIRED)
+find_package(ZLIB REQUIRED)
 find_package(CURL REQUIRED)
 find_path(SDL2_INCLUDE_DIR SDL.h PATH_SUFFIXES SDL2)
 find_library(SDL2_LIBRARY NAMES SDL2)
@@ -32,7 +36,7 @@ if(NOT TARGET OpenGL::GLU)
 endif()
 
 file(GLOB APP_SOURCES CONFIGURE_DEPENDS "src/*.cpp")
-list(FILTER APP_SOURCES EXCLUDE REGEX "/(main|updater)\\.cpp$")
+list(FILTER APP_SOURCES EXCLUDE REGEX "/main\\.cpp$")
 file(GLOB PROTO_SOURCES CONFIGURE_DEPENDS "src/protobuf/*.pb.cc")
 file(GLOB_RECURSE JUI_SOURCES CONFIGURE_DEPENDS "src/jui/src/*.cpp")
 list(FILTER JUI_SOURCES EXCLUDE REGEX "/application/window\\.cpp$")
@@ -45,12 +49,17 @@ add_executable(item-manager ${APP_SOURCES} ${PROTO_SOURCES} ${JUI_SOURCES} ${JUT
 target_include_directories(item-manager PRIVATE src src/jui/include src/jutil/include
     "${JIM_DEPS_DIR}/protobuf/src" "${SDL2_INCLUDE_DIR}")
 target_link_libraries(item-manager PRIVATE libprotobuf jsoncpp Threads::Threads
-    "${SDL2_LIBRARY}" OpenGL::GL OpenGL::GLU Freetype::Freetype PNG::PNG CURL::libcurl ${CMAKE_DL_LIBS})
+    "${SDL2_LIBRARY}" OpenGL::GL OpenGL::GLU Freetype::Freetype PNG::PNG ZLIB::ZLIB CURL::libcurl ${CMAKE_DL_LIBS})
 set_target_properties(item-manager PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/package")
 add_custom_command(TARGET item-manager POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../windows/package/fonts" "${CMAKE_BINARY_DIR}/package/fonts"
-    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../windows/package/img" "${CMAKE_BINARY_DIR}/package/img"
-    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../windows/package/resources" "${CMAKE_BINARY_DIR}/package/resources"
-    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../windows/package/third-party-notices" "${CMAKE_BINARY_DIR}/package/third-party-notices"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../Windows/package/fonts" "${CMAKE_BINARY_DIR}/package/fonts"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../Windows/package/img" "${CMAKE_BINARY_DIR}/package/img"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../Windows/package/resources" "${CMAKE_BINARY_DIR}/package/resources"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../Windows/package/third-party-notices" "${CMAKE_BINARY_DIR}/package/third-party-notices"
     COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/thumbnail_renderer" "${CMAKE_BINARY_DIR}/package/thumbnail_renderer"
-    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/linux-package" "${CMAKE_BINARY_DIR}/package")
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/linux-package" "${CMAKE_BINARY_DIR}/package"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../particle-assets" "${CMAKE_BINARY_DIR}/package/particles"
+    VERBATIM)
+
+add_executable(github_release_tests src/tests/github_release_tests.cpp)
+target_link_libraries(github_release_tests PRIVATE jsoncpp)

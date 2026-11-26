@@ -6,6 +6,8 @@
 #include <jui/layout/component.hpp>
 #include "item.hpp"
 #include "resource_loader_interface.hpp"
+#include <chrono>
+#include <string>
 
 /*
  * Class for rendering an item in a slot view.
@@ -25,6 +27,7 @@ public:
 
 	// Update the item we're drawing.
 	void set_item( const Item* item );
+	void set_hovered( bool hovered );
 
 	// Rendering call.
 	virtual void draw( JUI::Graphics2D* graphics );
@@ -33,6 +36,13 @@ private:
 
 	// Item we're drawing and cached information about it.
 	const Item* item_;
+	std::string particle_name_;
+	JUI::FileTexture* particle_still_ = nullptr;
+	bool particle_checked_ = false;
+	bool hovered_ = false;
+	float item_opacity_ = 1.0f;
+	std::chrono::steady_clock::time_point last_draw_;
+	std::chrono::steady_clock::time_point hover_started_;
 
 	// Static members for item rendering.
 	static JUI::FileTexture* splat_;

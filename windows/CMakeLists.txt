@@ -3,6 +3,9 @@ cmake_policy(SET CMP0091 NEW)
 project(JengererItemManagerRebuild LANGUAGES C CXX RC)
 set(JIM_DEPS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/deps" CACHE PATH "Directory containing dependency sources")
 set(JIM_OUTPUT_DIR "${CMAKE_BINARY_DIR}/package" CACHE PATH "Directory for built program files")
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../particle-assets")
+  file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/../particle-assets/" DESTINATION "${JIM_OUTPUT_DIR}/particles")
+endif()
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/package")
   file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/package/" DESTINATION "${JIM_OUTPUT_DIR}")
 endif()
@@ -16,6 +19,19 @@ add_compile_definitions(_CRT_SECURE_NO_WARNINGS _SCL_SECURE_NO_WARNINGS)
 set(protobuf_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(protobuf_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(protobuf_WITH_ZLIB OFF CACHE BOOL "" FORCE)
+# Protobuf 3.5.1 selects the removed std::hash_compare on modern MSVC even
+# though it already uses C++11 unordered containers. Select its portable
+# std::hash implementation for MSVC 2010 and later.
+set(JIM_PROTOBUF_HASH_HEADER "${JIM_DEPS_DIR}/protobuf/src/google/protobuf/stubs/hash.h")
+if(MSVC AND EXISTS "${JIM_PROTOBUF_HASH_HEADER}")
+  file(READ "${JIM_PROTOBUF_HASH_HEADER}" JIM_PROTOBUF_HASH_SOURCE)
+  string(REPLACE "#elif defined(_MSC_VER) && !defined(_STLPORT_VERSION)"
+    "#elif defined(_MSC_VER) && _MSC_VER < 1600 && !defined(_STLPORT_VERSION)"
+    JIM_PROTOBUF_HASH_PATCHED "${JIM_PROTOBUF_HASH_SOURCE}")
+  if(NOT JIM_PROTOBUF_HASH_SOURCE STREQUAL JIM_PROTOBUF_HASH_PATCHED)
+    file(WRITE "${JIM_PROTOBUF_HASH_HEADER}" "${JIM_PROTOBUF_HASH_PATCHED}")
+  endif()
+endif()
 add_subdirectory(${JIM_DEPS_DIR}/protobuf/cmake protobuf-build EXCLUDE_FROM_ALL)
 
 add_library(jsoncpp STATIC ${JIM_DEPS_DIR}/jsoncpp/src/lib_json/json_reader.cpp ${JIM_DEPS_DIR}/jsoncpp/src/lib_json/json_value.cpp ${JIM_DEPS_DIR}/jsoncpp/src/lib_json/json_writer.cpp)
@@ -68,7 +84,8 @@ target_include_directories(integrated_thumbnail_renderer PRIVATE ${JIM_DEPS_DIR}
 target_link_libraries(integrated_thumbnail_renderer PUBLIC libprotobuf jsoncpp pngstatic opengl32 gdi32 user32 advapi32)
 add_executable(item_manager WIN32 ${APP_SOURCES} src/item_manager.rc src/app_version.rc)
 target_include_directories(item_manager PRIVATE ${JIM_DEPS_DIR}/protobuf/src)
-target_link_libraries(item_manager PRIVATE jui jutil integrated_thumbnail_renderer libprotobuf jsoncpp "${CMAKE_CURRENT_SOURCE_DIR}/src/steam/steam_api.lib" dbghelp bcrypt)
+target_link_directories(item_manager PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src/steam")
+target_link_libraries(item_manager PRIVATE jui jutil integrated_thumbnail_renderer libprotobuf jsoncpp steam_api dbghelp shell32)
 target_compile_definitions(item_manager PRIVATE WIN32 NDEBUG CURL_STATICLIB)
 set_target_properties(item_manager PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${JIM_OUTPUT_DIR}")
 set_target_properties(item_manager PROPERTIES RUNTIME_OUTPUT_DIRECTORY_RELEASE "${JIM_OUTPUT_DIR}")
@@ -109,8 +126,6 @@ target_include_directories(integrated_app_proto_test PRIVATE src ${JIM_DEPS_DIR}
 target_link_libraries(integrated_app_proto_test PRIVATE integrated_thumbnail_renderer)
 add_executable(github_release_tests src/tests/github_release_tests.cpp)
 target_link_libraries(github_release_tests PRIVATE jsoncpp)
-add_executable(github_verify_tests src/tests/github_verify_tests.cpp src/updater.cpp src/http_resource_loader.cpp)
-target_link_libraries(github_verify_tests PRIVATE jui jutil jsoncpp bcrypt)
 add_executable(local_resources_tests src/tests/local_resources_tests.cpp src/http_resource_loader.cpp)
 target_link_libraries(local_resources_tests PRIVATE jui jutil)
 add_executable(item_presentation_tests src/tests/item_presentation_tests.cpp src/item_presentation.cpp

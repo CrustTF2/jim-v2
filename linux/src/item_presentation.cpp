@@ -299,6 +299,7 @@ ItemPresentation ItemPresentationSchema::resolve(unsigned int definition, unsign
         const unsigned int id = static_cast<unsigned int>(values[index]);
         const Json::Value& effect = data_["effects"][std::to_string(id)];
         const std::string name = effect.isString() ? effect.asString() : "Unknown effect #" + std::to_string(id);
+        if (effect.isString() && !name.empty()) result.particle_effects.push_back(name);
         if (!result.effects.empty()) result.effects += "\n";
         result.effects += "Unusual Effect: " + name;
     }

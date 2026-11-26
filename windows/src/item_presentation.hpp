@@ -19,6 +19,7 @@ struct ItemPresentation {
     std::string name;
     std::string finish;
     std::string effects;
+    std::vector<std::string> particle_effects;
     std::string wear;
     std::string custom_description;
     std::string gift_name;
