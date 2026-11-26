@@ -10,7 +10,8 @@ Download the appropriate archive from this repository's Releases page and extrac
 
 **Linux:** The build targets x86-64 Ubuntu-based systems and requires a graphical desktop, OpenGL, native Linux Steam, and TF2. Extract the Linux archive to a writable location, open a terminal in the extracted folder, and run:
 
-```sh
+```
+bash install-system-dependencies.sh
 bash setup-renderer.sh
 bash run-item-manager.sh
 ```
