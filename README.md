@@ -16,7 +16,7 @@ bash setup-renderer.sh
 bash run-item-manager.sh
 ```
 
-The Linux archive includes a private Python runtime for its War Paint renderer; the setup script creates a virtual environment and downloads the required Python packages. The helper 'install-system-dependencies.sh' uses APT to install the required graphics and networking libraries and may request your administrator password. The renderer uses 512-pixel textures and adjusts the worker count to available CPUs, up to three. For a single launch, `JIM_PREVIEW_WORKERS=3 bash run-item-manager.sh` overrides the worker count.
+The Linux archive includes a private Python runtime for its War Paint renderer; the setup script creates a virtual environment and downloads the required Python packages. The helper `install-system-dependencies.sh` uses APT to install the required graphics and networking libraries and may request your administrator password. The renderer uses 512-pixel textures and adjusts the worker count to available CPUs, up to three. For a single launch, `JIM_PREVIEW_WORKERS=3 bash run-item-manager.sh` overrides the worker count.
 
 On both platforms, the app waits for required previews to be generated while loading.
 
