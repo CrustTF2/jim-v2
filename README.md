@@ -6,17 +6,16 @@ Item Manager is a Windows and Linux application for viewing and organizing a Tea
 
 Download the appropriate archive from this repository's Releases page and extract it to its own writable folder. Run the app with Steam running and Team Fortress 2 installed. The application downloads item schema and image data on first use and keeps generated previews in its own folders. The release includes the item metadata needed for item display, but does not include a previously downloaded schema or cache.
 
-**Windows:** Extract `jim-v2.0.1-windows.zip` and run `item_manager.exe`. War Paint and skin previews use an integrated native renderer with up to three workers and 512-pixel textures.
+**Windows:** Extract the Windows archive and run `item_manager.exe`. War Paint and skin previews use an integrated native renderer with up to three workers and 512-pixel textures.
 
-**Linux:** The build targets x86-64 Ubuntu-based systems and requires a graphical desktop, OpenGL, native Linux Steam, and TF2. Extract `jim-v2.0.1-linux.tar.gz` into a writable location and run:
+**Linux:** The build targets x86-64 Ubuntu-based systems and requires a graphical desktop, OpenGL, native Linux Steam, and TF2. Extract the Linux archive to a writable location, open a terminal in the extracted folder, and run:
 
 ```sh
-cd jim-v2.0.1-linux
 bash setup-renderer.sh
 bash run-item-manager.sh
 ```
 
-The Linux archive includes a private Python runtime for its War Paint renderer; setup downloads the required Python packages. If shared libraries are missing, run `bash install-system-dependencies.sh` and retry. The renderer uses 512-pixel textures and adjusts the worker count to available CPUs, up to three. For a single launch, `JIM_PREVIEW_WORKERS=3 bash run-item-manager.sh` overrides the worker count.
+The Linux archive includes a private Python runtime for its War Paint renderer; the setup script creates a virtual environment and downloads the required Python packages. If shared libraries are missing, run `bash install-system-dependencies.sh` and retry. This helper uses APT to install the required graphics and networking libraries and may request your administrator password. The renderer uses 512-pixel textures and adjusts the worker count to available CPUs, up to three. For a single launch, `JIM_PREVIEW_WORKERS=3 bash run-item-manager.sh` overrides the worker count.
 
 On both platforms, the app waits for required previews to be generated while loading.
 
@@ -63,4 +62,5 @@ The Linux build downloads pinned Protocol Buffers and JsonCpp sources and verifi
 - Steam interface definitions: [SteamRE/open-steamworks](https://github.com/SteamRE/open-steamworks).
 - Dependencies: [Protocol Buffers](https://github.com/protocolbuffers/protobuf), [JsonCpp](https://github.com/open-source-parsers/jsoncpp), [zlib](https://github.com/madler/zlib), [libpng](https://github.com/pnggroup/libpng), [FreeType](https://github.com/freetype/freetype), [curl](https://github.com/curl/curl), and GLee. See `windows/package/third-party-notices` for included notices.
 - Linux uses [SDL2](https://github.com/libsdl-org/SDL), [Python Build Standalone](https://github.com/astral-sh/python-build-standalone), and the Python renderer dependencies listed in `linux/thumbnail_renderer/requirements.txt`.
+- Unusual Effect Images/Animations: [Equip.tf](https://equip.tf).
 - Team Fortress 2, Steam, related game assets and the Steamworks API belong to Valve. This project is not affiliated with or endorsed by Valve.
